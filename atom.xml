@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Colin的博客</title>
+  <subtitle>慎独、沉淀、坚持、绽放</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-06-23T07:37:28.465Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>DongChunlin</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo+GitHub搭建个人域名博客（三）</title>
+    <link href="http://yoursite.com/2017/06/22/Hexo+GitHub+blog_03/"/>
+    <id>http://yoursite.com/2017/06/22/Hexo+GitHub+blog_03/</id>
+    <published>2017-06-22T06:52:07.000Z</published>
+    <updated>2017-06-23T07:37:28.465Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="手把手教你从零开始搭建个人博客-三"><a href="#手把手教你从零开始搭建个人博客-三" class="headerlink" title="手把手教你从零开始搭建个人博客(三)"></a>手把手教你从零开始搭建个人博客(三)</h1><hr>
+<h3 id="本文是Hexo-GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址"><a href="#本文是Hexo-GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址" class="headerlink" title="　本文是Hexo+GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址"></a>　本文是Hexo+GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址</h3><p>　　<font size="3" color="red">本文基于已经将个人博客部署在GitHub基础之上，如果还没有搭建的请先移步这里：<br>　　　<a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a> </font></p>
+<hr>
+<blockquote>
+<font size="4">添加域名解析</font>
+
+</blockquote>
+<p>　　想要绑定个性域名，首先得有一个域名喽，这里我就不介绍怎么申请域名了，还没有域名的自行去申请就行了。本文例子是在阿里云申请的域名。</p>
+<p>　　首先进入阿里云控制台，在你的域名列表里选择一个你要绑定的域名，直接点击后面的【解析】，如图：</p>
+<p>　　<img src="http://i.imgur.com/VBQl8C4.png" alt=""></p>
+<p>　　进入解析界面：</p>
+<p>　　<img src="http://i.imgur.com/5x8bNrG.png" alt=""></p>
+<p>　　点击【添加解析】按钮，输入如图两条记录，注意的是记录类型要选“CNAME”（CNAME记录：<br>    如果将域名指向一个域名，实现与被指向域名相同的访问效果，需要增加CNAME记录）。 主机记录：第一条输入“@”，第二条输入”www”。记录值都是填GitHub博客域名，例如：zhangsan.github.io。选择保存完成个人域名向个人博客的映射。添加解析后，在浏览器输入我们新注册的域名：</p>
+<p>　　<img src="http://i.imgur.com/sj3rm4x.png" alt=""></p>
+<p>　　咦！！！404？  哈哈，不要着急，听我来说。仔细看这是GitHub报的404，说明我们的域名已经成功映射到了GitHub网站，但是找不到我们的博客位置，所以我们还需要做的就是将个人博客映射到个人域名。</p>
+<blockquote>
+<font size="4">本地部署映射</font>
+
+</blockquote>
+<p>　　进入本地blog&gt;source文件夹下，新建名为【CNAME】的文件，不要后缀名（ps:可以新建txt,输入名字CNAME，把后缀txt删掉即可），进入编辑，里面填写你的域名，例如“zhangsan.com”，注意，不需要http、www，保存。</p>
+<p>　　好了，我们开始部署：</p>
+<p>　　生成本地静态文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
+<p>　　部署到远端：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
+<p>　　哦了，现在开始用你的域名访问试试吧。</p>
+<blockquote>
+<font size="4">我的博客事例：　<a href="http://www.dongchunlin.com" target="_blank" rel="external">http://www.dongchunlin.com</a></font></blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;手把手教你从零开始搭建个人博客-三&quot;&gt;&lt;a href=&quot;#手把手教你从零开始搭建个人博客-三&quot; class=&quot;headerlink&quot; title=&quot;手把手教你从零开始搭建个人博客(三)&quot;&gt;&lt;/a&gt;手把手教你从零开始搭建个人博客(三)&lt;/h1&gt;&lt;hr&gt;
+&lt;h3 id
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo+GitHub搭建个人域名博客（二）</title>
+    <link href="http://yoursite.com/2017/06/22/Hexo+GitHub+blog_02/"/>
+    <id>http://yoursite.com/2017/06/22/Hexo+GitHub+blog_02/</id>
+    <published>2017-06-22T06:51:58.000Z</published>
+    <updated>2017-06-23T06:02:30.150Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="手把手教你从零开始搭建个人博客-二"><a href="#手把手教你从零开始搭建个人博客-二" class="headerlink" title="手把手教你从零开始搭建个人博客(二)"></a>手把手教你从零开始搭建个人博客(二)</h1><hr>
+<h3 id="本文是Hexo-GitHub搭建个人域名博客的第二篇，将带你将本地博客部署到GitHub"><a href="#本文是Hexo-GitHub搭建个人域名博客的第二篇，将带你将本地博客部署到GitHub" class="headerlink" title="　　本文是Hexo+GitHub搭建个人域名博客的第二篇，将带你将本地博客部署到GitHub"></a>　　本文是Hexo+GitHub搭建个人域名博客的第二篇，将带你将本地博客部署到GitHub</h3><p>　　<font size="3" color="red">本文基于已经在本地搭建好Hexo的基础之上，如果还没有搭建的请先移步这里：<br>　　　<a href="http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/" target="_blank" rel="external">http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</a> </font></p>
+<hr>
+<blockquote>
+<font size="4">新建GitHub仓库</font>
+
+</blockquote>
+<p>　　首先得有个GitHub账号，这里就不介绍怎么申请账号了哈，没有的小伙伴自己先申请一个。</p>
+<p>　　登录账号后，在头像左侧，点击“+”号旁边的下三角，选择“New repository” 新建仓库，如图：</p>
+<p>　　<img src="http://i.imgur.com/tFuZMH4.png" alt=""></p>
+<p>　　填写以下如图信息：</p>
+<p>　　<img src="http://i.imgur.com/wKQbnrZ.png" alt=""></p>
+<p>　　<font color="red">注意了：如果你的Owner是 XXX，那么Repository name就是 XXX.github.io 。</font></p>
+<p>　　关于「Repository name」的填写，格式是username.github.io，其中username是你的用户名，即「Owner」默认的那个账户的名字，如图示我应该填写的应该是zhangsan.github.io这样的。填写好了之后会提示没有错误的话，在输入框的旁边会有个绿色的勾勾，然后就可以点击「Create repository」提交即可。另外，「Description」，关于这个仓库的一些描述，这里是可选的，你可以填上对你要部署的博客的一些简短的描述。还有要注意的一点就是「Public」和「Private」，默认保持「Public」即可。</p>
+<hr>
+<blockquote>
+<font size="4">提交部署</font>
+
+</blockquote>
+<p>　　这一步恐怕是最关键的，毕竟放在本地预览也不是我们最想要的效果。等部署到GitHub后，我们就可以通过　<a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a>　访问了。下面，咱们首先要说一下部署到GitHub的原理了：</p>
+<p>　　1.我们刚刚在Github上创建的那个仓库repo（zhangsan.github.io）一个最大的特点就是其master中的html静态文件，可以通过链接　<a href="http://zhangsan.github.io" target="_blank" rel="external">http://zhangsan.github.io</a>　来直接访问。</p>
+<p>　　2.每次新建文章的时候，都是存在本地source/_posts目录下，就是md文件。</p>
+<p>　　3.Hexo -g 会将上述md文件生成一个静态网站（第一次会生成一个public目录），这个静态文件可以直接访问。</p>
+<p>　　4.需要将hexo生成的静态网站，提交(git commit)到github上。</p>
+<p> 　　明白了原理，现在咱们仔细介绍两种不同的部署方法。</p>
+<ol>
+<li><font size="4"><strong>使用git命令行部署</strong></font>
+
+</li>
+</ol>
+<p>　　首先将远程仓库克隆到本地，</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> e:/hexo/blog</div></pre></td></tr></table></figure>
+<p>　　<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> git <span class="built_in">clone</span> https://github.com/zhangsan/zhangsan.github.io.git .deploy/zhangsan.github.io</div></pre></td></tr></table></figure></p>
+<p>　　上面名字换成你自己的。现在blog根目录下会多出一个文件夹（zhangsan.github.io）。根据上面咱们将的原理，下面需要将“public”文件夹的文件全部复制到文件夹“zhangsan.github.io”。最终就是将“zhangsan.github.io”文件夹下的文件部署到GitHub。</p>
+<p>　　（1）首先生成本地静态文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<p>　　（2）进入该目录下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> zhangsan.github.io</div></pre></td></tr></table></figure>
+<p>　　（3）下面就是利用git命令提交了：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add.</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"描述"</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin master</div></pre></td></tr></table></figure>
+<p>　　好了，现在就可以通过<a href="http://zhangsan.github.io访问了。以后新建文章、更新文章，只需要上面（1）（2）（3）三步就行啦。" target="_blank" rel="external">http://zhangsan.github.io访问了。以后新建文章、更新文章，只需要上面（1）（2）（3）三步就行啦。</a></p>
+<ol>
+<li><font size="4"><strong>使用hexo deploy部署</strong></font>
+
+</li>
+</ol>
+<p>　　有没有感觉上面的方法步骤稍微多一些，现在咱们介绍一种方便点的方法，使用hexo deploy部署。</p>
+<p>　　首先，我们需要对blog根目录下的_config.xml文件做如下修改：</p>
+<p>　　<code>deploy:</code></p>
+<p>　　　<code>type: git</code></p>
+<p>　　　<code>repo: git@github.com:zhangsan/zhangsan.github.io.git</code></p>
+<p>　　　<code>brash: master</code></p>
+<p>　　注意上面冒号后面要有空格。</p>
+<p>　　安装一个扩展：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<p>　　<img src="http://i.imgur.com/gT6NHNt.png" alt=""></p>
+<p>　  （1）首先生成本地静态文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<p>　　（2）然后执行命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
+<p>　　这里首次会弹框让你输入你的GitHub账号密码，输入即可。然后需要等待，别急，命令行会出现一堆信息，最后一行是： INFO Deploy done:git 。</p>
+<p>　　好了，现在可以通过　<a href="http://zhangsan.github.io" target="_blank" rel="external">http://zhangsan.github.io</a>　访问了。以后新建文章、更新文章，只需要（1）（2）两步就行啦。是不是简单了很多呢！</p>
+<hr>
+<blockquote>
+<font size="4">后记</font>
+
+</blockquote>
+<p>　　怎么样，感觉还不错吧。现在咱们可以直接通过　<a href="http://zhangsan.github.io" target="_blank" rel="external">http://zhangsan.github.io</a>　搞起个人博客了。但是还木有绑定个人域名哦，想绑定个人域名的，那就请移步这里吧：</p>
+<p>　　<font size="3"><a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</a></font></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;手把手教你从零开始搭建个人博客-二&quot;&gt;&lt;a href=&quot;#手把手教你从零开始搭建个人博客-二&quot; class=&quot;headerlink&quot; title=&quot;手把手教你从零开始搭建个人博客(二)&quot;&gt;&lt;/a&gt;手把手教你从零开始搭建个人博客(二)&lt;/h1&gt;&lt;hr&gt;
+&lt;h3 id
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo+GitHub搭建个人域名博客(一)</title>
+    <link href="http://yoursite.com/2017/06/21/Hexo+GitHub+blog_01/"/>
+    <id>http://yoursite.com/2017/06/21/Hexo+GitHub+blog_01/</id>
+    <published>2017-06-21T08:14:37.000Z</published>
+    <updated>2017-06-23T03:23:00.350Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="手把手教你从零开始搭建个人博客-一"><a href="#手把手教你从零开始搭建个人博客-一" class="headerlink" title="手把手教你从零开始搭建个人博客(一)"></a>手把手教你从零开始搭建个人博客(一)</h1><hr>
+<h3 id="本文是Hexo-GitHub搭建个人域名博客的第一篇，初始化在本地搭建Hexo、简单学习Hexo常用命令、本地写第一篇文章并预览、配置主题。"><a href="#本文是Hexo-GitHub搭建个人域名博客的第一篇，初始化在本地搭建Hexo、简单学习Hexo常用命令、本地写第一篇文章并预览、配置主题。" class="headerlink" title="　　本文是Hexo+GitHub搭建个人域名博客的第一篇，初始化在本地搭建Hexo、简单学习Hexo常用命令、本地写第一篇文章并预览、配置主题。"></a>　　本文是Hexo+GitHub搭建个人域名博客的第一篇，初始化在本地搭建Hexo、简单学习Hexo常用命令、本地写第一篇文章并预览、配置主题。</h3><blockquote>
+<font size="4">Git</font>
+
+</blockquote>
+<ul>
+<li><p>下载Git： <a href="https://git-scm.com/downloads" target="_blank" rel="external">https://git-scm.com/downloads</a></p>
+<p>  选择合适的版本下载然后安装，我们稍后将会用上。</p>
+</li>
+</ul>
+<blockquote>
+<font size="4">Node.js</font>
+
+
+</blockquote>
+<ul>
+<li><p>下载Node.js： <a href="https://nodejs.org/en/download/" target="_blank" rel="external">https://nodejs.org/en/download/</a></p>
+<p>  因为Hexo是一款基于<em>Node.js</em>的静态博客框架，所以我们还需要安装好它。</p>
+<p>  同样选择对应自己电脑的版本下载安装。</p>
+</li>
+</ul>
+<blockquote>
+<font size="4">Hexo</font>
+
+</blockquote>
+<ul>
+<li><p>~~</p>
+<p>  哈哈，折腾了一小会，我们今天的主角登场了。</p>
+<p>  还记得刚才安装的Git吗，下面咱们就开始用起来了。</p>
+<p>  先打开Git Bash，输入执行这条命令安装Hexo</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
+<p>  这里不要着急，稍等一会，就会出现下面信息：</p>
+<p>  <img src="http://i.imgur.com/ALBgH5f.png" alt=""></p>
+<p>  验证一下有没有安装成功，输入以下命令查看Hexo的版本信息：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo -v</div></pre></td></tr></table></figure>
+<p>  出现以下类似信息就说明安装成功了！</p>
+<p>  <img src="http://i.imgur.com/4MVUEGU.png" alt=""></p>
+</li>
+</ul>
+<blockquote>
+<font size="4">Hexo的使用</font>
+
+</blockquote>
+<ul>
+<li><p>创建目录</p>
+<p>  首先，我们在E盘根目录下建一个文件夹（blog），将它初始化为我们的博客目录：。<strong>ps:本文的操作都是在E盘下进行的，小伙伴们可以自行选择。</strong></p>
+<p>  下面有两种方法进入下一步操作：</p>
+<p>   （1）进入刚才新建的：“blog”文件夹， 右键》选择“Git Bash Here”</p>
+<p>   （2）或者先打开Git Bash，执行命令  <code>cd E:/blog</code></p>
+</li>
+</ul>
+<ul>
+<li><p>执行命令初始化</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
+<p>  这里别着急，喝口水等一下~~出现如下信息说明初始化成功！</p>
+<p>  INFO  Start blogging with Hexo!</p>
+</li>
+</ul>
+<ul>
+<li><p>安装依赖包</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
+<p>  安装成功出现：</p>
+<p>  <img src="http://i.imgur.com/zFwagS8.png" alt=""></p>
+<p>  下面看一下目录结构：</p>
+<p>  <img src="http://i.imgur.com/xj5FPDb.png" alt=""></p>
+<p>  好了至此Hexo已将安装部署完了，不要着急，接下来有必要学习一下Heox常用命令。搞起来~~</p>
+</li>
+</ul>
+<blockquote>
+<font size="4">Hexo常见命令</font>
+
+</blockquote>
+<ul>
+<li><p>hexo generate (hexo g) ##》生成静态文件，会在当前目录下生成一个新的叫做public的文件夹</p>
+</li>
+<li><p>hexo server (hexo s) ##》启动本地web服务，用于博客的预览</p>
+</li>
+<li><p>hexo deploy (hexo d) ##》部署播客到远端（比如github, heroku等平台）</p>
+</li>
+<li><p>hexo new “postName” ##》新建文章</p>
+</li>
+<li><p>hexo new page “pageName” ##》新建页面</p>
+</li>
+<li><p>常用简写：</p>
+<p>  hexo n == hexo new</p>
+<p>  hexo g == hexo generate</p>
+<p>  hexo s == hexo server</p>
+<p>  hexo d == hexo deploy</p>
+</li>
+<li><p>常用组合：</p>
+<p>  hexo d -g ##》生成部署</p>
+<p>  hexo s -g ##》生成预览</p>
+<p>  很简单的几个命令，用几次就记住了，下面激动人心的时刻到了，咱们写篇文章试试~~</p>
+</li>
+</ul>
+<blockquote>
+<font size="4">写文章预览</font>
+
+</blockquote>
+<ul>
+<li><p>写新文章：</p>
+<p>  还是在刚才的blog根目录下，写篇名字“FirstArticle”的文章：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new <span class="string">"FirstArticle"</span></div></pre></td></tr></table></figure>
+<p>  出现以下信息：</p>
+<p>  <img src="http://i.imgur.com/PC8Cpcy.png" alt=""></p>
+<p>  我们的文章在该目录下：E:\blog\source_posts\FirstArticle</p>
+<p>  我们找到这个文件之后用Markdown编辑器或其他文本编辑器打开，我们会看到里面已经有内容了：</p>
+<p>  <img src="http://i.imgur.com/doeWSha.png" alt=""></p>
+<p>  这是由模板生成的Front-Matter，在—前面的是文章的一些基本信息例如标题、日期及标签，还能添加其他一些选项如分类，我们后面有机会再来说说。</p>
+<p>  我们的文章内容要写在—下面，随便写点什么来看看效果吧：</p>
+<p>  <img src="http://i.imgur.com/SPyv0Y0.png" alt=""></p>
+</li>
+<li><p>生成页面：</p>
+<p>  执行命令，生成静态页面（.md到.html）：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<p>  出现一堆信息：</p>
+<p>  <img src="http://i.imgur.com/lSnthe5.png" alt=""></p>
+<p>  好了，是不是很简单，我们的博客页面已经生成了，下面搞起预览！</p>
+</li>
+<li><p>页面预览：</p>
+<p>  执行命令：</p>
+  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
+<p>  看到如下信息（我用的简写哦）：</p>
+<p>  <img src="http://i.imgur.com/IWT1dZw.png" alt=""></p>
+<p>  好了，哈哈，终于搞完了，现在打开浏览器访问<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>试试吧！    </p>
+</li>
+</ul>
+<h3 id="下篇文章将介绍怎么部署到GitHub，快去试试吧！"><a href="#下篇文章将介绍怎么部署到GitHub，快去试试吧！" class="headerlink" title="　下篇文章将介绍怎么部署到GitHub，快去试试吧！"></a>　<font color="red">下篇文章将介绍怎么部署到GitHub，快去试试吧！</font></h3><p>　　点击这里： <a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></p>
+<blockquote>
+<font size="4">配置主题</font>
+
+</blockquote>
+<p>　　在这个看脸的时代，没有一个好的门面怎么行呢，哈哈。下面带你找好的主题并更换。</p>
+<p>　　咱们暂且找找GitHub上排名靠前的主题，如图：</p>
+<p>　　<img src="http://i.imgur.com/Q9TzcEE.png" alt=""></p>
+<p>　　好了，就先看看第一个吧，点击进入，复制链接，如图：</p>
+<p>　　<img src="http://i.imgur.com/HmFvFiD.png" alt=""></p>
+<p>　　回到本地blog文件夹，在根目录下有个themes文件夹，对了，这里就是存放主题的地方。现在只有一个默认的主题 landscape。我们下载刚才找到的主题：</p>
+<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git</div></pre></td></tr></table></figure></p>
+<p>　　等待下载完了，咱们再看看themes文件下是不是多了个yilia文件夹，这就是刚下载完的主题。</p>
+<p>　　下载完更换就很简单了，需要配置一下blog文件夹下的_config.yml文件。</p>
+<p>　　打开该文件，找到theme，将默认的改成yilia即可。如图：</p>
+<p>　　<br>    <img src="http://i.imgur.com/OrA8fud.png" alt=""></p>
+<p>　　重新部署下：</p>
+<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure></p>
+<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure></p>
+<p>　　好了，就是这么简单，现在重新打开 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 试试吧！</p>
+<blockquote>
+<font size="4">后记</font>
+
+</blockquote>
+<p>　　终于搞完了，有没有很欣慰啊，哈哈。别忘了，咱们的最终目的是要放到远端访问哦。歇一会，咱们继续搞起。下一篇将带你将本地博客部署到远端GitHub，请移步这里：</p>
+<p>　　<font size="3"><a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></font></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;手把手教你从零开始搭建个人博客-一&quot;&gt;&lt;a href=&quot;#手把手教你从零开始搭建个人博客-一&quot; class=&quot;headerlink&quot; title=&quot;手把手教你从零开始搭建个人博客(一)&quot;&gt;&lt;/a&gt;手把手教你从零开始搭建个人博客(一)&lt;/h1&gt;&lt;hr&gt;
+&lt;h3 id
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo+GitHub搭建个人域名博客</title>
+    <link href="http://yoursite.com/2017/06/21/Hexo+GitHub+blog/"/>
+    <id>http://yoursite.com/2017/06/21/Hexo+GitHub+blog/</id>
+    <published>2017-06-21T07:14:37.000Z</published>
+    <updated>2017-06-22T09:13:10.986Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="手把手教你从零开始搭建个人博客"><a href="#手把手教你从零开始搭建个人博客" class="headerlink" title="手把手教你从零开始搭建个人博客"></a>手把手教你从零开始搭建个人博客</h1><hr>
+<blockquote>
+<font size="5">前言</font>
+
+</blockquote>
+<h3 id="这几天刚搭建了个人博客，打算把在其他平台的文章归置到一起，自己做个备份。本文作为一个记录，也给大家一份参考，避免不必要的踩坑。"><a href="#这几天刚搭建了个人博客，打算把在其他平台的文章归置到一起，自己做个备份。本文作为一个记录，也给大家一份参考，避免不必要的踩坑。" class="headerlink" title="　　这几天刚搭建了个人博客，打算把在其他平台的文章归置到一起，自己做个备份。本文作为一个记录，也给大家一份参考，避免不必要的踩坑。"></a>　　这几天刚搭建了个人博客，打算把在其他平台的文章归置到一起，自己做个备份。本文作为一个记录，也给大家一份参考，避免不必要的踩坑。</h3><h3 id="本文用Windows机器进行实际操作，其他系统差别不大，后续会加一篇文章介绍mac系统下的搭建过程。"><a href="#本文用Windows机器进行实际操作，其他系统差别不大，后续会加一篇文章介绍mac系统下的搭建过程。" class="headerlink" title="　　本文用Windows机器进行实际操作，其他系统差别不大，后续会加一篇文章介绍mac系统下的搭建过程。"></a>　　本文用Windows机器进行实际操作，其他系统差别不大，后续会加一篇文章介绍mac系统下的搭建过程。</h3><blockquote>
+<font size="5"> 正文</font>
+
+</blockquote>
+<h3 id="由于篇幅关系，以及个人需求，本次搭建过程将分为三篇文章。"><a href="#由于篇幅关系，以及个人需求，本次搭建过程将分为三篇文章。" class="headerlink" title="　　由于篇幅关系，以及个人需求，本次搭建过程将分为三篇文章。"></a>　　由于篇幅关系，以及个人需求，本次搭建过程将分为三篇文章。</h3><ul>
+<li><font size="4">第一篇实现安装Hexo，在本地发布预览文章</font>
+
+<p>  点击这里： <a href="http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/" target="_blank" rel="external">http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</a></p>
+</li>
+<li><font size="4">第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问</font>
+
+<p>  点击这里： <a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></p>
+</li>
+<li><font size="4">第三篇教你绑定域名，实现个人域名的访问</font>
+
+<p>  点击这里： <a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</a></p>
+</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;手把手教你从零开始搭建个人博客&quot;&gt;&lt;a href=&quot;#手把手教你从零开始搭建个人博客&quot; class=&quot;headerlink&quot; title=&quot;手把手教你从零开始搭建个人博客&quot;&gt;&lt;/a&gt;手把手教你从零开始搭建个人博客&lt;/h1&gt;&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;fo
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>图文博客</title>
+    <link href="http://yoursite.com/2017/06/21/%E5%9B%BE%E6%96%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2017/06/21/图文博客/</id>
+    <published>2017-06-21T06:33:37.000Z</published>
+    <updated>2017-06-21T07:00:51.165Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="程序员，如何从平庸走向理想？"><a href="#程序员，如何从平庸走向理想？" class="headerlink" title="程序员，如何从平庸走向理想？"></a>程序员，如何从平庸走向理想？</h1><hr>
+<p>我算是靠坑蒙拐骗进了程序员的门，然后一路狂奔。26 岁之前几乎没有任何写代码的经验，研究生毕业却意外选择了一家不可能提供培训的初创公司，在每日担忧公司倒闭、害怕被炒鱿鱼以及同事冷落白眼的三重压力下逆流而上，一年半后离职，已是拥有 500 万用户产品的后台主程。从前我对计算机技术心怀畏惧，认定技术高人一定有佛光笼罩，昼夜不息运键如飞日吐代码上万行。现在也算见过一些世面了，回首那段忐忑不安宛如初夜的过程，我却不发觉有任何的励志意味，而是视为一种理所当然。理想的程序员，和理想的建筑师、理想的财务师、理想的按摩师没有任何的差别，他们本质上都是一群手艺人。我相信理想的程序员人人皆可成为。﻿</p>
+<p>近三年总在互联网圈厮混，我认识过一些程序员，共事过一些程序员，领导过一些程序员，又面试过一些程序员。他们学历不同，有的来自北大，有的来自北大青鸟，有的是博士，有的是高中肄业；资历也不同，有的来自 BAT，有的来自某破产基金公司（还是一个销售）；年限也从 0 到 15 年不等。但我认为程序员只需分三类：天才的程序员、理想的程序员、平庸的程序员。天才的程序员我只敢说接触过 3 个，这是天命。7 分由你是颗精子的时候就已决定，拥有绝佳的数学天赋、冷静致密的逻辑、为解决难题宁愿不眠不休而深以为乐的技术热情；3 分来自起步要早早早，恨不得同龄人玩泥巴的时候就得开始玩电脑，大学毕业前就突破一万小时法则，后面的已是游戏人生。﻿</p>
+<p>﻿天才的程序员可遇不可求，更不能长有，我看到的 90% 仍是平庸的程序员。IT时代的膨胀，已让程序员如同文艺复兴时的印刷匠一样的普通，多数投入祖师爷门下的人，仅是为了更大的饭碗，更高的待遇，更好的生计。平庸的程序员编写腐烂的代码，没有规范和一致性，固守旧世界的语言，还好谈论大的架构和性能，说的比做的漂亮。而毫无例外的，他们认定技术没有出路，做产品、营销和管理的是更高大上的手艺，而他们当中的 99%，又会自然的流露出自己恰巧具备了那方面的天赋，至于进程为什么会崩溃这样的小问题是不屑于去了解的。﻿</p>
+<p>﻿而我最喜欢和理想的程序员相处，恨不得与他们同吃同住，如果允许，我希望我的队伍能插满他们的旗帜。理想的程序员心眼儿不坏（他们从来都不是办公室政治的宠儿，是一群单纯明亮快乐的手艺人），有天真烂漫的好奇心（他们的眼睛里经常闪着「哇，这个是怎么做到的！」），永远精益求精（他们的口头禅是「我再研究一下」），还乐于分享（他们活跃于 GitHub、各大问答社区和你的身边，舍得将宝贵时间用于帮助新手）。是的，他们不需要被管理，只需要给一个大的方向，总能回报以意想不到的结果。﻿</p>
+<p>﻿理想的程序员与平庸的程序员只有一墙之隔。两者的差距只有 6 个一点点，而人与人的差距，正是在这日积月累的一点点中，被永远拉开了。有意思的是，我发现这6个一点点都和意识有关，也就是程序员和其他一切新兴产业的工种一样，只需要意识加上时间的锤炼，人人皆可达到理想的阶段。理想的程序员必然也是一个优秀的 problem-solver.。</p>
+<h2 id="第-1-个一点点：专注眼下"><a href="#第-1-个一点点：专注眼下" class="headerlink" title="第 1 个一点点：专注眼下"></a>第 1 个一点点：专注眼下</h2><p>﻿<br>﻿见过太多心猿意马的程序员，我不得不把「专注眼下」作为天字第一条。他们往往有各式各样的小梦想，比如做个小茶农、做个小鹅贩、做产品、做销售、做投资，却被程序员的高薪或是没有转行的魄力「耽误」了，而因为不专注，他们不在意做好自己的本分，不在意锤炼自己的技能，不在意学习新兴的技术。不可否认，这世界上存在着伟大的产品（像乔老爷）、伟大的销售（像埃里森）、伟大的投资客（像彼得菲），而他们毫无例外都是程序员出身。可你听说过巴菲特评价盖茨的话么，比尔盖茨如果转行去卖狗，那他一定是全世界最大的狗贩。我坚信除了少数的天才外，冥冥众生均可以在多个领域取得成功，只要保持足够的专注。而哪怕你下一年就想卖狗去，程序员的经验仍然能训练你强大的逻辑、谨慎和耐心，放在哪个行业都是相当可观的竞争力。﻿</p>
+<h2 id="第-2-个一点点：思考力与推动力"><a href="#第-2-个一点点：思考力与推动力" class="headerlink" title="第 2 个一点点：思考力与推动力"></a>第 2 个一点点：思考力与推动力</h2><p>﻿﻿<br>﻿我认为处理 bug、崩溃、调优、入侵等突发事件比编程本身更能体现平庸程序员与理想程序员的差距。当面对一个未知的问题时，如何定位复杂条件下的核心问题、如何抽丝剥茧地分析问题的潜在原因、如何排除干扰还原一个最小的可验证场景、如何抓住关键数据验证自己的猜测与实验，都是体现程序员思考力的最好场景。是的，在衡量理想程序员的标准上，思考力比经验更加重要。﻿</p>
+<p>﻿有时候小伙伴跑过来，问我「提交了一个任务被卡住了，怎么办」的时候，我总觉得他可以做得更好。比如，可以检查试验别的任务，以排除代码自身的原因；可以通过 Web UI 检查异常（如果没有账号，可以让我提供）；可以排查主机日志或删除缓存，再不济，总应该提供任务 ID 和控制台日志给我。理想的程序员永远不会等事情前进，他们会用尽一切方法让事情前进。﻿</p>
+<h2 id="第-3-个一点点：Never-Say-No"><a href="#第-3-个一点点：Never-Say-No" class="headerlink" title="第 3 个一点点：Never Say No"></a>第 3 个一点点：Never Say No</h2><p>﻿<br>﻿记得从前厂离职之前，找老板谈话，他说我最大的优点就是从来不和他说这个做不到。后来我发现在很多团队里，都存在一种技术和产品的对立，程序员往往以「技术上无法实现」来挡产品的需求，而产品也往往以「Facebook可以为什么我们做不到」来奚落程序员。这两句话应该属于禁语，从根本上都不利于程序猿和产品狗的相亲相爱。﻿</p>
+<p>﻿一句「技术上无法实现」是容易出口，可有多少人在说出这句话的时候，心里是 100% 肯定的？如果不肯定，为什么不能回去谷歌一下再回答？原本我以为程序员是充满想象力，在因为有想象力，才能诞生那么多改变我们生活的软件和互联网产品。见识多了，才了解大部分程序员已经在与 bug 的对抗中变得保守而不愿担当风险，与此同时许多团队也不愿意宽容失败。于是「Say No」变成一种习惯性的抵触，还记得曾国藩为什么解散湘军么？他说那支军队已「暮气渐深」，不能打仗了。要做理想的程序员，就不能给自己滋生暮气的机会，如果面对不合理的需求，可以把时间成本摆出来，把曲线救国方案亮出来，简单粗暴「Say No」是不可取的。﻿</p>
+<h2 id="第-4-个一点点：投资未来"><a href="#第-4-个一点点：投资未来" class="headerlink" title="第 4 个一点点：投资未来"></a>第 4 个一点点：投资未来</h2><p>﻿﻿<br>程序员是一个非常残忍的职业。你所学所用的语言、框架、模式，很可能在数年内就成昨日黄花了；你现在嘲笑的另一群程序员，可能马上就能转身来嘲笑你了。所以理想的程序员除了做好自己的本分，还要花费时间来投资未来。什么是「投资」？投资就是你现在投入的时间，在未来会以更多的时间或者金钱（看看早几年学习 iOS 的程序员现在的薪酬！）回报你。举我自己的领域 — 数据挖掘为例，08 年左右 Hadoop 开始兴起，一时「大数据」概念火热，Hadoop 工程师万金难求，各互联网公司纷纷把数据统计、数据分析和数据挖掘的业务切换到分布式平台上。这几年眼看 Hadoop 还在不断迭代，Spark 又异军突起，一举刷新了 Hadoop 保持的排序记录，以内存存储中间数据带来的性能优势和丰富的数据结构让人爱个不停，各种奇异的小 bug 和陡峭的学习曲线又让人打退堂鼓。那么，明眼人都知道 Spark 是未来的趋势（内存会越来越便宜），在主业务放在 Hadoop 的条件下，就可以适当把一些小模块切换到 Spark 上，同时留意 Spark 社区的发展。很快从 Spark 获得的性能收益就能把之前投入的学习时间挣回来。
+﻿</p>
+<h2 id="第5个一点点：善用工具"><a href="#第5个一点点：善用工具" class="headerlink" title="第5个一点点：善用工具"></a>第5个一点点：善用工具</h2><p>﻿<br>﻿善用工具可以分为 4 个层面：﻿</p>
+<p><font color="red">搜索引擎﻿、不相信重复﻿、代码片段、﻿自动化</font>﻿</p>
+<p>我刚入行那会，一个计算机专业却当了公务员的朋友问我，你一点都没学过编程，平时怎么写代码？我说，谷歌，于是遭到无情的耻笑，以至于我在哪里的账号都叫 2shou，告诫自己是一个无耻的二手程序员。这是一个笑话，但如果现在问我，我还是要回答谷歌。程序员的成长就像膨胀的圆饼，外面是无边无际的大海，圆饼越大，与大海接触的面也越大，懂的越多，不懂的越多，而计算机科学又是一门更新换代异常迅速的学科，同时也是知识互联网化最好的学科，很难利用传统的科班式有教有学的方法，相反通过搜索引擎则很容易获取到最新的知识。﻿</p>
+<p>﻿不相信重复，大师的话叫 DRY 原则（Dont repeat yourself），代码写多了，会有人为的直觉判断好的和烂的代码，我的标准是简洁和规范，简洁并不是美感上的标准，重复越少，给自己出错的机会也越少，后期维护的成本也越少。﻿</p>
+<p>﻿如果你不幸丢了三周前的代码，也许你能凭着过人的记忆力把脑子里残余的片段复写出来，但如果丢的是三个月前的代码，恐怕就没有那么好的运气了。理想的程序员会着力找寻有效的资料保存方式，把工作里灵光闪现写下的代码、脚本、配置、经验等短的片段保存起来，以便任何时候都能复查。﻿</p>
+<p>﻿理想的程序员必须懒惰。对他们来说，重复的步骤和重复的代码一样丑陋，如果意识到一项工作有可能长期要重复，那么自动化的时间总是越早越好。﻿</p>
+<h2 id="第6个一点点：管理时间"><a href="#第6个一点点：管理时间" class="headerlink" title="第6个一点点：管理时间"></a>第6个一点点：管理时间</h2><p>﻿之所以管理时间会对程序员这个行当特别重要，是因为在完成任务时你必须像荒野里的狼一样，「独行」。没有外界约束的情况下还能稳定控制自己，保证能高效率地工作和学习，那么日积月累你肯定会变得比一般人厉害。﻿</p>
+<p>程序员干的是高强度的脑力活，一般每天集中 4-5 个小时应对本职工作就足够了，但工作之外，一定要安排时间用于学习。除了学习，留点时间放空自己也是必要的，利用泡茶或者喝咖啡的间隙，把弥足珍贵的时间留给自己，往前想往后想，事半功倍。﻿<br>说了这么多，想必有人会问，费劲心思成为一个理想的程序员，又有什么用处？会有高薪吗？不。能升职吗？也不见得。迎娶白富美呢？不如去卖狗。﻿</p>
+<p>﻿稻盛和夫曾经说过一个故事，明治时期的手艺人被天皇召见，虽然都是不读书的乡下人，但一辈子兢兢业业地做一件事情，自然有一股高贵的气质。理想的程序员，应该就是循着这种高贵的气质而去的吧！﻿ </p>
+<p><img src="http://i.imgur.com/GlwL6ft.jpg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;程序员，如何从平庸走向理想？&quot;&gt;&lt;a href=&quot;#程序员，如何从平庸走向理想？&quot; class=&quot;headerlink&quot; title=&quot;程序员，如何从平庸走向理想？&quot;&gt;&lt;/a&gt;程序员，如何从平庸走向理想？&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;我算是靠坑蒙拐骗进了程序员的门，然
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
