@@ -1,25 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang=zh>
 <head>
-    
-
-    
-
-    
-
-
-
     <meta charset="utf-8">
     
-    
-    
-    <title>Colin的博客 | 慎独、沉淀、坚持、绽放</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    
-    <meta name="theme-color" content="#3F51B5">
-    
-    
-    <meta name="keywords" content="安卓,Android,android,html5,kolin,微信,小程序,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,用户体验">
+    <title>Colin的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="标准程序员一枚，从事Android开发四年，深入研究移动端开发技术。">
 <meta name="keywords" content="安卓,Android,android,html5,kolin,微信,小程序,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,用户体验">
 <meta property="og:type" content="website">
@@ -31,481 +16,1016 @@
 <meta name="twitter:title" content="Colin的博客">
 <meta name="twitter:description" content="标准程序员一枚，从事Android开发四年，深入研究移动端开发技术。">
     
-        <link rel="alternate" type="application/atom+xml" title="Colin的博客" href="/atom.xml">
+
     
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
-    <script>window.lazyScripts=[]</script>
+        <link rel="alternate" href="/" title="Colin的博客" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+        <script type="text/javascript">
+(function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-102035334-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+    
+    
+    
+        <script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "//hm.baidu.com/hm.js?4a6e764a563cfc3b024c3547daa70e71";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+    
+
+
 </head>
 
 <body>
-    <div id="loading" class="active"></div>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Colin的博客</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="/assets/img/江流儿.jpg" />
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
 
-    <aside id="menu"  >
-  <div class="inner flex-row-vertical">
-    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
-        <i class="icon icon-lg icon-close"></i>
-    </a>
-    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
-      <div class="brand">
-        <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/assets/img/江流儿.jpg">
-        </a>
-        <hgroup class="introduce">
-          <h5 class="nickname">DongChunlin</h5>
-          <a href="mailto:chunlin_dcl@163.com" title="chunlin_dcl@163.com" class="mail">chunlin_dcl@163.com</a>
-        </hgroup>
-      </div>
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
     </div>
-    <div class="scroll-wrap flex-col">
-      <ul class="nav">
-        
-            <li class="waves-block waves-effect active">
-              <a href="/"  >
-                <i class="icon icon-lg icon-home"></i>
-                主页
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/archives"  >
-                <i class="icon icon-lg icon-archives"></i>
-                归档
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/tags"  >
-                <i class="icon icon-lg icon-tags"></i>
-                标签
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/categories"  >
-                <i class="icon icon-lg icon-th-list"></i>
-                分类
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="https://github.com/lingruimingfeng" target="_blank" >
-                <i class="icon icon-lg icon-github"></i>
-                Github
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="http://weibo.com/lingruimingfeng" target="_blank" >
-                <i class="icon icon-lg icon-weibo"></i>
-                Weibo
-              </a>
-            </li>
-        
-      </ul>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
     </div>
-  </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="/assets/img/江流儿.jpg" />
+            <h2 id="name">DongChunlin</h2>
+            <h3 id="title">APP Developer &amp; Designer</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Beijing, China</span>
+            <a id="follow" target="_blank" href="https://github.com/lingruimingfeng">关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                4
+                <span>文章</span>
+            </div>
+            <div class="article-info-block">
+                2
+                <span>标签</span>
+            </div>
+        </div>
+        
+        <div class="profile-block social-links">
+            <table>
+                <tr>
+                    
+                    
+                    <td>
+                        <a href="https://github.com/lingruimingfeng" target="_blank" title="github" class=tooltip>
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="twitter" class=tooltip>
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="facebook" class=tooltip>
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="dribbble" class=tooltip>
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="/" target="_blank" title="rss" class=tooltip>
+                            <i class="fa fa-rss"></i>
+                        </a>
+                    </td>
+                    
+                </tr>
+            </table>
+        </div>
+        
+    </div>
 </aside>
 
-    <main id="main">
-        <header class="top-header" id="header">
-    <div class="flex-row">
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
-          <i class="icon icon-lg icon-navicon"></i>
-        </a>
-        <div class="flex-col header-title ellipsis">Colin的博客</div>
+            
+            <section id="main">
+    <article id="post-Hexo+GitHub+blog_03" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        <div class="search-wrap" id="search-wrap">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
-                <i class="icon icon-lg icon-chevron-left"></i>
-            </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
-                <i class="icon icon-lg icon-search"></i>
-            </a>
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/06/22/Hexo+GitHub+blog_03/">Hexo+GitHub搭建个人域名博客（三）</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/06/22/Hexo+GitHub+blog_03/">
+            <time datetime="2017-06-22T06:52:07.000Z" itemprop="datePublished">2017-06-22</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Hexo教程/">Hexo教程</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Hexo搭建/">Hexo搭建</a>, <a class="tag-link" href="/tags/环境搭建/">环境搭建</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <font size="6">手把手教你从零开始搭建个人博客(三)</font>
+
+<hr>
+<font size="4">本文是Hexo+GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址</font>
+
+
+<font size="3" color="red">本文基于已经将个人博客部署在GitHub基础之上，如果还没有搭建的请先移步这里：<br>　　<a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a> </font>
+
+<hr>
+<h2 id="添加域名解析"><a href="#添加域名解析" class="headerlink" title="添加域名解析"></a>添加域名解析</h2><blockquote>
+<p>想要绑定个性域名，首先得有一个域名喽，这里我就不介绍怎么申请域名了，还没有域名的自行去申请就行了。本文例子是在阿里云申请的域名。</p>
+</blockquote>
+<p>　　首先进入阿里云控制台，在你的域名列表里选择一个你要绑定的域名，直接点击后面的【解析】，如图：</p>
+<p>　　<img src="http://i.imgur.com/VBQl8C4.png" alt=""></p>
+<p>　　进入解析界面：</p>
+<p>　　<img src="http://i.imgur.com/5x8bNrG.png" alt=""></p>
+<p>　　点击【添加解析】按钮，输入如图两条记录，注意的是记录类型要选“CNAME”（CNAME记录：<br>    如果将域名指向一个域名，实现与被指向域名相同的访问效果，需要增加CNAME记录）。 主机记录：第一条输入“@”，第二条输入”www”。记录值都是填GitHub博客域名，例如：zhangsan.github.io。选择保存完成个人域名向个人博客的映射。添加解析后，在浏览器输入我们新注册的域名：</p>
+<p>　　<img src="http://i.imgur.com/sj3rm4x.png" alt=""></p>
+<p>　　咦！！！404？  哈哈，不要着急，听我来说。仔细看这是GitHub报的404，说明我们的域名已经成功映射到了GitHub网站，但是找不到我们的博客位置，所以我们还需要做的就是将个人博客映射到个人域名。</p>
+<h2 id="本地部署映射"><a href="#本地部署映射" class="headerlink" title="本地部署映射"></a>本地部署映射</h2><p>　　进入本地blog&gt;source文件夹下，新建名为【CNAME】的文件，不要后缀名（ps:可以新建txt,输入名字CNAME，把后缀txt删掉即可），进入编辑，里面填写你的域名，例如“zhangsan.com”，注意，不需要http、www，保存。</p>
+<p>　　好了，我们开始部署：</p>
+<p>　　生成本地静态文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
+<p>　　部署到远端：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
+<p>　　哦了，现在开始用你的域名访问试试吧。</p>
+<h2 id="我的博客事例"><a href="#我的博客事例" class="headerlink" title="我的博客事例"></a>我的博客事例</h2><p>　　<font size="4"><a href="http://www.dongchunlin.com">http://www.dongchunlin.com</a></font></p>
+
+        
         </div>
-        
-        
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
-            <i class="icon icon-lg icon-share-alt"></i>
-        </a>
-        
-    </div>
-</header>
-<header class="content-header index-header">
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
 
-    <div class="container fade-scale">
-        <h1 class="title">Colin的博客</h1>
-        <h5 class="subtitle">
-            
-                慎独、沉淀、坚持、绽放
-            
-        </h5>
-    </div>
-
-    
-
-
-</header>
-
-<div class="container body-wrap">
-
-    <ul class="post-list">
-    
-        <li class="post-list-item fade">
-            <article id="post-Hexo+GitHub+blog_03"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-06-22 14:52:07" datetime="2017-06-22T06:52:07.000Z"  itemprop="datePublished">2017-06-22</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Hexo教程/">Hexo教程</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/06/22/Hexo+GitHub+blog_03/">Hexo+GitHub搭建个人域名博客（三）</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        手把手教你从零开始搭建个人博客(三)
-
-
-本文是Hexo+GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址
-
-
-本文基于已经将个人博客部署在GitHub基础之上，如果还没有搭建的请先移步这里：　　http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/ 
-
-
-添加域名解析　　
-
-想要绑定个性域名，首先得有一个域...
-    
-
-        <a href="/2017/06/22/Hexo+GitHub+blog_03/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo搭建/">Hexo搭建</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/环境搭建/">环境搭建</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Hexo+GitHub+blog_02"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-06-22 14:51:58" datetime="2017-06-22T06:51:58.000Z"  itemprop="datePublished">2017-06-22</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Hexo教程/">Hexo教程</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/06/22/Hexo+GitHub+blog_02/">Hexo+GitHub搭建个人域名博客（二）</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        手把手教你从零开始搭建个人博客(二)
-
-
-本文是Hexo+GitHub搭建个人域名博客的第二篇，将带你将本地博客部署到GitHub
-
-本文基于已经在本地搭建好Hexo的基础之上，如果还没有搭建的请先移步这里：　　http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/ 
-
-
-新建GitHub仓库　　
-
-首先得有个GitHub账号，这里就不介...
-    
-
-        <a href="/2017/06/22/Hexo+GitHub+blog_02/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo搭建/">Hexo搭建</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/环境搭建/">环境搭建</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Hexo+GitHub+blog_01"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-06-21 16:14:37" datetime="2017-06-21T08:14:37.000Z"  itemprop="datePublished">2017-06-21</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Hexo教程/">Hexo教程</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/06/21/Hexo+GitHub+blog_01/">Hexo+GitHub搭建个人域名博客(一)</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        手把手教你从零开始搭建个人博客(一)
-
-
-本文是Hexo+GitHub搭建个人域名博客的第一篇，初始化在本地搭建Hexo、简单学习Hexo常用命令、本地写第一篇文章并预览、配置主题。
-
-安装Git
-下载Git： https://git-scm.com/downloads
-  选择合适的版本下载然后安装，我们稍后将会用上。
-
-
-安装Node.js
-下载Node.js： https://node...
-    
-
-        <a href="/2017/06/21/Hexo+GitHub+blog_01/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo搭建/">Hexo搭建</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/环境搭建/">环境搭建</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-        <li class="post-list-item fade">
-            <article id="post-Hexo+GitHub+blog"
-  class="article-card article-type-post" itemprop="blogPost">
-
-    <div class="post-meta">
-        <time class="post-time" title="2017-06-21 15:14:37" datetime="2017-06-21T07:14:37.000Z"  itemprop="datePublished">2017-06-21</time>
-
-        
-	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/Hexo教程/">Hexo教程</a></li></ul>
-
-
-
-    </div>
-
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/06/21/Hexo+GitHub+blog/">Hexo+GitHub搭建个人域名博客</a>
-    </h3>
-  
-
-
-
-
-    <div class="post-content" id="post-content" itemprop="postContent">
-
-    
-        手把手教你从零开始搭建个人博客
-
-
-前言　　这几天刚搭建了个人博客，打算把在其他平台的文章归置到一起，自己做个备份。本文作为一个记录，也给大家一份参考，避免不必要的踩坑。
-　　本文用Windows机器进行实际操作，其他系统差别不大，后续会加一篇文章介绍mac系统下的搭建过程。 
-正文　　由于篇幅关系，以及个人需求，本次搭建过程将分为三篇文章。 
-第一篇实现安装Hexo，在本地发布预览文章　　...
-    
-
-        <a href="/2017/06/21/Hexo+GitHub+blog/" class="post-more waves-effect waves-button">
-            阅读全文…
-        </a>
-    </div>
-    
-    <div class="post-footer">
-        
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo搭建/">Hexo搭建</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/环境搭建/">环境搭建</a></li></ul>
-
-    </div>
-    
-</article>
-
-        </li>
-    
-    </ul>
-
-    
 
 </div>
 
-        <footer class="footer">
-    <div class="top">
-        
-<p>
-    <span id="busuanzi_container_site_uv" style='display:none'>
-        站点总访客数：<span id="busuanzi_value_site_uv"></span>
-    </span>
-    <span id="busuanzi_container_site_pv" style='display:none'>
-        站点总访问量：<span id="busuanzi_value_site_pv"></span>
-    </span>
-</p>
-
-
-        <p>
             
-                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
-            
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
-        </p>
+    
+        <a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
     </div>
-    <div class="bottom">
-        <p><span>DongChunlin &copy; 2015 - 2017</span>
-            <span>
+    
+</article>
+
+
+
+    <article id="post-Hexo+GitHub+blog_02" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
                 
-                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
-            </span>
-        </p>
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/06/22/Hexo+GitHub+blog_02/">Hexo+GitHub搭建个人域名博客（二）</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/06/22/Hexo+GitHub+blog_02/">
+            <time datetime="2017-06-22T06:51:58.000Z" itemprop="datePublished">2017-06-22</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Hexo教程/">Hexo教程</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Hexo搭建/">Hexo搭建</a>, <a class="tag-link" href="/tags/环境搭建/">环境搭建</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <font size="6">手把手教你从零开始搭建个人博客(二)</font>
+
+<hr>
+<font size="4">本文是Hexo+GitHub搭建个人域名博客的第二篇，将带你将本地博客部署到GitHub</font>
+
+<font size="3" color="red">本文基于已经在本地搭建好Hexo的基础之上，如果还没有搭建的请先移步这里：<br>　　<a href="http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/" target="_blank" rel="external">http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</a> </font>
+
+<hr>
+<h2 id="新建GitHub仓库"><a href="#新建GitHub仓库" class="headerlink" title="新建GitHub仓库"></a>新建GitHub仓库</h2><blockquote>
+<p>首先得有个GitHub账号，这里就不介绍怎么申请账号了哈，没有的小伙伴自己先申请一个。</p>
+</blockquote>
+<p>　　登录账号后，在头像左侧，点击“+”号旁边的下三角，选择“New repository” 新建仓库，如图：<br>​<br>　　<img src="http://i.imgur.com/tFuZMH4.png" alt=""></p>
+<p>　　填写以下如图信息：</p>
+<p>　　<img src="http://i.imgur.com/wKQbnrZ.png" alt=""></p>
+<p>　　<font color="red">注意了：如果你的Owner是 XXX，那么Repository name就是 XXX.github.io 。</font></p>
+<p>　　关于「Repository name」的填写，格式是username.github.io，其中username是你的用户名，即「Owner」默认的那个账户的名字，如图示我应该填写的应该是zhangsan.github.io这样的。填写好了之后会提示没有错误的话，在输入框的旁边会有个绿色的勾勾，然后就可以点击「Create repository」提交即可。另外，「Description」，关于这个仓库的一些描述，这里是可选的，你可以填上对你要部署的博客的一些简短的描述。还有要注意的一点就是「Public」和「Private」，默认保持「Public」即可。</p>
+<hr>
+<h2 id="提交部署"><a href="#提交部署" class="headerlink" title="提交部署"></a>提交部署</h2><p>　　这一步恐怕是最关键的，毕竟放在本地预览也不是我们最想要的效果。等部署到GitHub后，我们就可以通过　<a href="http://username.github.io" target="_blank" rel="external">http://username.github.io</a>　访问了。下面，咱们首先要说一下部署到GitHub的原理了：</p>
+<p>　　1.我们刚刚在Github上创建的那个仓库repo（zhangsan.github.io）一个最大的特点就是其master中的html静态文件，可以通过链接　<a href="http://zhangsan.github.io" target="_blank" rel="external">http://zhangsan.github.io</a>　来直接访问。</p>
+<p>　　2.每次新建文章的时候，都是存在本地source/_posts目录下，就是md文件。</p>
+<p>　　3.Hexo -g 会将上述md文件生成一个静态网站（第一次会生成一个public目录），这个静态文件可以直接访问。</p>
+<p>　　4.需要将hexo生成的静态网站，提交(git commit)到github上。</p>
+<p> 　　明白了原理，现在咱们仔细介绍两种不同的部署方法。</p>
+<ol>
+<li><font size="4"><strong>使用git命令行部署</strong></font>
+
+</li>
+</ol>
+<p>　　首先将远程仓库克隆到本地，</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> e:/hexo/blog</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> git <span class="built_in">clone</span> https://github.com/zhangsan/zhangsan.github.io.git .deploy/zhangsan.github.io</div></pre></td></tr></table></figure>
+<p>　　上面名字换成你自己的。现在blog根目录下会多出一个文件夹（zhangsan.github.io）。根据上面咱们将的原理，下面需要将“public”文件夹的文件全部复制到文件夹“zhangsan.github.io”。最终就是将“zhangsan.github.io”文件夹下的文件部署到GitHub。</p>
+<p>　　（1）首先生成本地静态文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<p>　　（2）进入该目录下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> zhangsan.github.io</div></pre></td></tr></table></figure>
+<p>　　（3）下面就是利用git命令提交了：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git add.</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git commit -m <span class="string">"描述"</span></div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git push origin master</div></pre></td></tr></table></figure>
+<p>　　好了，现在就可以通过<a href="http://zhangsan.github.io访问了。以后新建文章、更新文章，只需要上面（1）（2）（3）三步就行啦。" target="_blank" rel="external">http://zhangsan.github.io访问了。以后新建文章、更新文章，只需要上面（1）（2）（3）三步就行啦。</a></p>
+<ol>
+<li><font size="4"><strong>使用hexo deploy部署</strong></font>
+
+</li>
+</ol>
+<p>　　有没有感觉上面的方法步骤稍微多一些，现在咱们介绍一种方便点的方法，使用hexo deploy部署。</p>
+<p>　　首先，我们需要对blog根目录下的_config.xml文件做如下修改：</p>
+<p>　　<code>deploy:</code></p>
+<p>　　　<code>type: git</code></p>
+<p>　　　<code>repo: git@github.com:zhangsan/zhangsan.github.io.git</code></p>
+<p>　　　<code>brash: master</code></p>
+<p>　　注意上面冒号后面要有空格。</p>
+<p>　　安装一个扩展：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
+<p>　　<img src="http://i.imgur.com/gT6NHNt.png" alt=""></p>
+<p>　  （1）首先生成本地静态文件：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
+<p>　　（2）然后执行命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure>
+<p>　　这里首次会弹框让你输入你的GitHub账号密码，输入即可。然后需要等待，别急，命令行会出现一堆信息，最后一行是： INFO Deploy done:git 。</p>
+<p>　　好了，现在可以通过　<a href="http://zhangsan.github.io" target="_blank" rel="external">http://zhangsan.github.io</a>　访问了。以后新建文章、更新文章，只需要（1）（2）两步就行啦。是不是简单了很多呢！</p>
+<hr>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>　　怎么样，感觉还不错吧。现在咱们可以直接通过　<a href="http://zhangsan.github.io" target="_blank" rel="external">http://zhangsan.github.io</a>　搞起个人博客了。但是还木有绑定个人域名哦，想绑定个人域名的，那就请移步这里吧：</p>
+<p>　　<font size="3"><a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</a></font></p>
+<p>​    </p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
+
+</div>
+
+            
+    
+        <a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-Hexo+GitHub+blog_01" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/06/21/Hexo+GitHub+blog_01/">Hexo+GitHub搭建个人域名博客(一)</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/06/21/Hexo+GitHub+blog_01/">
+            <time datetime="2017-06-21T08:14:37.000Z" itemprop="datePublished">2017-06-21</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Hexo教程/">Hexo教程</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Hexo搭建/">Hexo搭建</a>, <a class="tag-link" href="/tags/环境搭建/">环境搭建</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <font size="6">手把手教你从零开始搭建个人博客(一)</font>
+
+<hr>
+<font size="4">本文是Hexo+GitHub搭建个人域名博客的第一篇，初始化在本地搭建Hexo、简单学习Hexo常用命令、本地写第一篇文章并预览、配置主题。</font>
+
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><ul>
+<li><p>下载Git： <a href="https://git-scm.com/downloads" target="_blank" rel="external">https://git-scm.com/downloads</a></p>
+<p>选择合适的版本下载然后安装，我们稍后将会用上。</p>
+</li>
+</ul>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><ul>
+<li><p>下载Node.js： <a href="https://nodejs.org/en/download/" target="_blank" rel="external">https://nodejs.org/en/download/</a></p>
+<p>因为Hexo是一款基于<em>Node.js</em>的静态博客框架，所以我们还需要安装好它。</p>
+<p>同样选择对应自己电脑的版本下载安装。</p>
+</li>
+</ul>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><ul>
+<li><p>~~</p>
+<p>哈哈，折腾了一小会，我们今天的主角登场了。</p>
+<p>还记得刚才安装的Git吗，下面咱们就开始用起来了。</p>
+<p>先打开Git Bash，输入执行这条命令安装Hexo</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install hexo-cli -g</div></pre></td></tr></table></figure>
+<p>这里不要着急，稍等一会，就会出现下面信息：</p>
+<p> <img src="http://i.imgur.com/ALBgH5f.png" alt=""></p>
+<p>验证一下有没有安装成功，输入以下命令查看Hexo的版本信息：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo -v</div></pre></td></tr></table></figure>
+<p>出现以下类似信息就说明安装成功了！</p>
+<p><img src="http://i.imgur.com/4MVUEGU.png" alt=""></p>
+</li>
+</ul>
+<h2 id="Hexo的使用"><a href="#Hexo的使用" class="headerlink" title="Hexo的使用"></a>Hexo的使用</h2><h3 id="创建目录"><a href="#创建目录" class="headerlink" title="创建目录"></a>创建目录</h3><p>　　首先，我们在E盘根目录下建一个文件夹（blog），将它初始化为我们的博客目录：。<strong>ps:本文的操作都是在E盘下进行的，小伙伴们可以自行选择。</strong></p>
+<p>　　下面有两种方法进入下一步操作：</p>
+<pre><code>（1）进入刚才新建的：“blog”文件夹， 右键》选择“Git Bash Here”
+
+（2）或者先打开Git Bash，执行命令  `cd E:/blog`
+</code></pre><h3 id="执行命令初始化"><a href="#执行命令初始化" class="headerlink" title="执行命令初始化"></a>执行命令初始化</h3><p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<p>　　这里别着急，喝口水等一下~~出现如下信息说明初始化成功！</p>
+<p>　　INFO  Start blogging with Hexo!</p>
+<h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<p>　　安装成功出现：</p>
+<p>　　<img src="http://i.imgur.com/zFwagS8.png" alt=""></p>
+<p>　　下面看一下目录结构：</p>
+<p>　　<img src="http://i.imgur.com/xj5FPDb.png" alt=""></p>
+<p>　　好了至此Hexo已将安装部署完了，不要着急，接下来有必要学习一下Heox常用命令。搞起来~~</p>
+<h2 id="Hexo常见命令"><a href="#Hexo常见命令" class="headerlink" title="Hexo常见命令"></a>Hexo常见命令</h2><h3 id="常见命令"><a href="#常见命令" class="headerlink" title="常见命令"></a>常见命令</h3><ul>
+<li><p>hexo generate (hexo g) ##》生成静态文件，会在当前目录下生成一个新的叫做public的文件夹</p>
+</li>
+<li><p>hexo server (hexo s) ##》启动本地web服务，用于博客的预览</p>
+</li>
+<li><p>hexo deploy (hexo d) ##》部署播客到远端（比如github, heroku等平台）</p>
+</li>
+<li><p>hexo new “postName” ##》新建文章</p>
+</li>
+<li><p>hexo new page “pageName” ##》新建页面</p>
+</li>
+</ul>
+<h3 id="常用简写"><a href="#常用简写" class="headerlink" title="常用简写"></a>常用简写</h3><p>　　hexo n == hexo new</p>
+<p>　　hexo g == hexo generate</p>
+<p>　　hexo s == hexo server</p>
+<p>　　hexo d == hexo deploy</p>
+<h3 id="常用组合"><a href="#常用组合" class="headerlink" title="常用组合"></a>常用组合</h3><p>　　hexo d -g ##》生成部署</p>
+<p>　　hexo s -g ##》生成预览</p>
+<p>　　很简单的几个命令，用几次就记住了，下面激动人心的时刻到了，咱们写篇文章试试~~</p>
+<h2 id="写文章预览"><a href="#写文章预览" class="headerlink" title="写文章预览"></a>写文章预览</h2><h3 id="写新文章"><a href="#写新文章" class="headerlink" title="写新文章"></a>写新文章</h3><p>　　还是在刚才的blog根目录下，写篇名字“FirstArticle”的文章：</p>
+<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo new <span class="string">"FirstArticle"</span></div><div class="line">​</div></pre></td></tr></table></figure></p>
+<p>　　出现以下信息：</p>
+<p>　　<img src="http://i.imgur.com/PC8Cpcy.png" alt=""></p>
+<p>　　我们的文章在该目录下：E:\blog\source_posts\FirstArticle<br>　　<br>　　我们找到这个文件之后用Markdown编辑器或其他文本编辑器打开，我们会看到里面已经有内容了：</p>
+<p>　　<img src="http://i.imgur.com/doeWSha.png" alt=""></p>
+<p>　　这是由模板生成的Front-Matter，在—前面的是文章的一些基本信息例如标题、日期及标签，还能添加其他一些选项如分类，我们后面有机会再来说说。</p>
+<p>　　我们的文章内容要写在—下面，随便写点什么来看看效果吧：</p>
+<p>　　<img src="http://i.imgur.com/SPyv0Y0.png" alt=""></p>
+<h3 id="生成页面"><a href="#生成页面" class="headerlink" title="生成页面"></a>生成页面</h3><p>　　执行命令，生成静态页面（.md到.html）：</p>
+<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<p>　　出现一堆信息：</p>
+<p>　　<img src="http://i.imgur.com/lSnthe5.png" alt=""></p>
+<p>　　好了，是不是很简单，我们的博客页面已经生成了，下面搞起预览！</p>
+<h3 id="页面预览"><a href="#页面预览" class="headerlink" title="页面预览"></a>页面预览</h3><p>　　执行命令：<br>​<br>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo server</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<p>　　看到如下信息（我用的简写哦）：</p>
+<p>　　<img src="http://i.imgur.com/IWT1dZw.png" alt=""></p>
+<p>　　好了，哈哈，终于搞完了，现在打开浏览器访问<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>试试吧！    </p>
+<h3 id="下篇文章将介绍怎么部署到GitHub，快去试试吧！"><a href="#下篇文章将介绍怎么部署到GitHub，快去试试吧！" class="headerlink" title="　下篇文章将介绍怎么部署到GitHub，快去试试吧！"></a>　<font color="red">下篇文章将介绍怎么部署到GitHub，快去试试吧！</font></h3><p>　　点击这里： <a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></p>
+<h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><p>　　在这个看脸的时代，没有一个好的门面怎么行呢，哈哈。下面带你找好的主题并更换。</p>
+<p>　　咱们暂且找找GitHub上排名靠前的主题，如图：</p>
+<p>　　<img src="http://i.imgur.com/Q9TzcEE.png" alt=""></p>
+<p>　　好了，就先看看第一个吧，点击进入，复制链接，如图：</p>
+<p>　　<img src="http://i.imgur.com/HmFvFiD.png" alt=""></p>
+<p>　　回到本地blog文件夹，在根目录下有个themes文件夹，对了，这里就是存放主题的地方。现在只有一个默认的主题 landscape。我们下载刚才找到的主题：</p>
+<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<p>　　等待下载完了，咱们再看看themes文件下是不是多了个yilia文件夹，这就是刚下载完的主题。</p>
+<p>　　下载完更换就很简单了，需要配置一下blog文件夹下的_config.yml文件。</p>
+<p>　　打开该文件，找到theme，将默认的改成yilia即可。如图：</p>
+<pre><code>![](http://i.imgur.com/OrA8fud.png)
+</code></pre><p>　　重新部署下：</p>
+<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo s</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<p>　　好了，就是这么简单，现在重新打开 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 试试吧！</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>　　终于搞完了，有没有很欣慰啊，哈哈。别忘了，咱们的最终目的是要放到远端访问哦。歇一会，咱们继续搞起。下一篇将带你将本地博客部署到远端GitHub，请移步这里：</p>
+<p>　　<font size="3"><a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></font></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
+
+</div>
+
+            
+    
+        <a href="http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
+    <article id="post-Hexo+GitHub+blog" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2017/06/21/Hexo+GitHub+blog/">Hexo+GitHub搭建个人域名博客</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2017/06/21/Hexo+GitHub+blog/">
+            <time datetime="2017-06-21T07:14:37.000Z" itemprop="datePublished">2017-06-21</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Hexo教程/">Hexo教程</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Hexo搭建/">Hexo搭建</a>, <a class="tag-link" href="/tags/环境搭建/">环境搭建</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <font size="6">手把手教你从零开始搭建个人博客</font>
+
+<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　这几天刚搭建了个人博客，打算把在其他平台的文章归置到一起，自己做个备份。本文作为一个记录，也给大家一份参考，避免不必要的踩坑。</p>
+<p>　　本文用Windows机器进行实际操作，其他系统差别不大，后续会加一篇文章介绍mac系统下的搭建过程。 </p>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>　　由于篇幅关系，以及个人需求，本次搭建过程将分为三篇文章。 </p>
+<h3 id="第一篇实现安装Hexo，在本地发布预览文章"><a href="#第一篇实现安装Hexo，在本地发布预览文章" class="headerlink" title="第一篇实现安装Hexo，在本地发布预览文章"></a>第一篇实现安装Hexo，在本地发布预览文章</h3><p>　　点击这里： </p>
+<p>　　<a href="http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/" target="_blank" rel="external">http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</a></p>
+<h3 id="第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问"><a href="#第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问" class="headerlink" title="第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问"></a>第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问</h3><p>　　点击这里： </p>
+<p>　　<a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></p>
+<h3 id="第三篇教你绑定域名，实现个人域名的访问"><a href="#第三篇教你绑定域名，实现个人域名的访问" class="headerlink" title="第三篇教你绑定域名，实现个人域名的访问"></a>第三篇教你绑定域名，实现个人域名的访问</h3><p>　　点击这里： </p>
+<p>　　<a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</a></p>
+
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
+
+</div>
+
+            
+    
+        <a href="http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog/#comments" class="article-comment-link">评论</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+</section>
+            
+                
+<aside id="sidebar">
+   
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/06/22/Hexo+GitHub+blog_03/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://p.chanyouji.cn/66670/1378624311987p183u6ivcaoemls51gvtr8e3bi5.jpg)" alt="Hexo+GitHub搭建个人域名博客（三）" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo教程/">Hexo教程</a></p>
+                            <p class="item-title"><a href="/2017/06/22/Hexo+GitHub+blog_03/" class="title">Hexo+GitHub搭建个人域名博客（三）</a></p>
+                            <p class="item-date"><time datetime="2017-06-22T06:52:07.000Z" itemprop="datePublished">2017-06-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/06/22/Hexo+GitHub+blog_02/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://i3.img.969g.com/news/imgx2014/11/26/323_155913_31bcf.jpg)" alt="Hexo+GitHub搭建个人域名博客（二）" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo教程/">Hexo教程</a></p>
+                            <p class="item-title"><a href="/2017/06/22/Hexo+GitHub+blog_02/" class="title">Hexo+GitHub搭建个人域名博客（二）</a></p>
+                            <p class="item-date"><time datetime="2017-06-22T06:51:58.000Z" itemprop="datePublished">2017-06-22</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/06/21/Hexo+GitHub+blog_01/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://bbs.meizhou.cn/data/attachment/forum/201511/18/200049uw4s4t6aetgy3mme.jpg)" alt="Hexo+GitHub搭建个人域名博客(一)" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo教程/">Hexo教程</a></p>
+                            <p class="item-title"><a href="/2017/06/21/Hexo+GitHub+blog_01/" class="title">Hexo+GitHub搭建个人域名博客(一)</a></p>
+                            <p class="item-date"><time datetime="2017-06-21T08:14:37.000Z" itemprop="datePublished">2017-06-21</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/06/21/Hexo+GitHub+blog/" class="thumbnail">
+    
+    
+        <span style="background-image:url(http://i3.img.969g.com/news/imgx2014/11/26/323_155913_31bcf.jpg)" alt="Hexo+GitHub搭建个人域名博客" class="thumbnail-image"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Hexo教程/">Hexo教程</a></p>
+                            <p class="item-title"><a href="/2017/06/21/Hexo+GitHub+blog/" class="title">Hexo+GitHub搭建个人域名博客</a></p>
+                            <p class="item-date"><time datetime="2017-06-21T07:14:37.000Z" itemprop="datePublished">2017-06-21</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo教程/">Hexo教程</a><span class="category-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo搭建/">Hexo搭建</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/环境搭建/">环境搭建</a><span class="tag-list-count">4</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Hexo搭建/" style="font-size: 10px;">Hexo搭建</a> <a href="/tags/环境搭建/" style="font-size: 10px;">环境搭建</a>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+                    <li>
+                        <a href="http://www.dongchunlin.com/">Colin的博客</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            &copy; 2017 DongChunlin<br>
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a.
+Analyse with <script src="http://s23.cnzz.com/z_stat.php?id=1262503976&web_id=1262503976" language="JavaScript"></script>
+
+        </div>
     </div>
 </footer>
-
-    </main>
-    <div class="mask" id="mask"></div>
-<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
-
-
-
-<div class="global-share" id="globalShare">
-    <ul class="reset share-icons">
-      <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.dongchunlin.com/&title=Colin的博客&pic=http://www.dongchunlin.com/assets/img/江流儿.jpg" data-title="微博">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      <li>
-        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.dongchunlin.com/&title=Colin的博客&source=标准程序员一枚，从事Android开发四年，深入研究移动端开发技术。" data-title=" QQ">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.dongchunlin.com/" data-title=" Facebook">
-          <i class="icon icon-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=Colin的博客&url=http://www.dongchunlin.com/&via=http://www.dongchunlin.com" data-title=" Twitter">
-          <i class="icon icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.dongchunlin.com/" data-title=" Google+">
-          <i class="icon icon-google-plus"></i>
-        </a>
-      </li>
-    </ul>
- </div>
-
-
-<div class="page-modal wx-share" id="wxShare">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABuElEQVR42u3aQW7DMAwEwPz/0+61QBFlSVpKUoxOBqzYoxwIaenHIx7Xr7Ge05t/88DFxR1zr+VYU/6+cv2cZ4tJDLi4uOe5eWFKiOtytv47XthwcXE/kvvsbj4TFxf3P3HX13mRwsXF/RZucvjJi1cSqWw/q+Hi4g64eUq573pLvouLi9viXoORxyJ3vRcXF/cMt1p05i2WXsyKi4v7Xm6vNdJj5W3Xx13rxsXFLb4rjzgny5iEp7i4uCe51aCzt6G5q4mLi4u7m9trjVSbqckConKGi4v7Ju56+zIPPiaNWFxc3DPcHWHovA0TBSK4uLibufmxZNJoSQ5ave0RLi7uDm51I5IXr/k3V6OpuLi4LUNvy9ILR26IWnBxcY9w871PdU619VLYheHi4m7m5j9LgtSjTVZcXNwjn19UDzBJU7b3jdgLCS4u7mbuVRyTo1FeCsv5DS4u7q3ceaA5QfSaLri4uGe4PcR6zryQRQ0VXFzczdxqS3Wy1F7pxMXF/UxuteHae1qU4uDi4n4MNw9PJ8t+sXhcXNyD3PnBppfB5O/CxcU9yc0fmrdXk7uTz7xwcXG3cX8AR7FD+vrQQ8YAAAAASUVORK5CYII=" alt="微信分享二维码">
-</div>
+        
+    
+    <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2137500"></script>
 
 
 
 
-    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
-<script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
-
-
-lazyScripts.push('//s95.cnzz.com/z_stat.php?id=1262550661&web_id=1262550661')
-
-</script>
-
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
-
-
-<div class="search-panel" id="search-panel">
-    <ul class="search-result" id="search-result"></ul>
-</div>
-<template id="search-tpl">
-<li class="item">
-    <a href="{path}" class="waves-block waves-effect">
-        <div class="title ellipsis" title="{title}">{title}</div>
-        <div class="flex-row flex-middle">
-            <div class="tags ellipsis">
-                {tags}
-            </div>
-            <time class="flex-col time">{date}</time>
-        </div>
-    </a>
-</li>
-</template>
-
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
 
 
 
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
 
-
-
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-
-
+    </div>
 </body>
 </html>
