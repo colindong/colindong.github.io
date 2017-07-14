@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Colin的博客">
 <meta property="og:description" content="手把手教你从零搭建个人博客">
 <meta property="og:image" content="http://i3.img.969g.com/news/imgx2014/11/26/323_155913_31bcf.jpg">
-<meta property="og:updated_time" content="2017-07-05T06:29:00.999Z">
+<meta property="og:updated_time" content="2017-07-13T13:12:28.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+GitHub搭建个人域名博客（二）">
 <meta name="twitter:description" content="手把手教你从零搭建个人博客">
@@ -284,14 +284,10 @@ var _hmt = _hmt || [];
         <div class="article-entry" itemprop="articleBody">
         
             
-            <font size="6">手把手教你从零开始搭建个人博客(二)</font>
-
-<hr>
-<font size="4">本文是Hexo+GitHub搭建个人域名博客的第二篇，将带你将本地博客部署到GitHub</font>
-
+            <hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    本文是Hexo+GitHub搭建个人域名博客的第二篇，将带你将本地博客部署到GitHub</p>
 <a id="more"></a>
-<font size="3" color="red">本文基于已经在本地搭建好Hexo的基础之上，如果还没有搭建的请先移步这里：<br>　　<a href="http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/" target="_blank" rel="external">http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</a> </font>
-
+<p>​    本文基于已经在本地搭建好Hexo的基础之上，如果还没有搭建的请先移步这里：<br>　　<a href="http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/">http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</a> </p>
 <hr>
 <h2 id="新建GitHub仓库"><a href="#新建GitHub仓库" class="headerlink" title="新建GitHub仓库"></a>新建GitHub仓库</h2><blockquote>
 <p>首先得有个GitHub账号，这里就不介绍怎么申请账号了哈，没有的小伙伴自己先申请一个。</p>
@@ -349,12 +345,60 @@ var _hmt = _hmt || [];
 <p>　　好了，现在可以通过　<a href="http://zhangsan.github.io" target="_blank" rel="external">http://zhangsan.github.io</a>　访问了。以后新建文章、更新文章，只需要（1）（2）两步就行啦。是不是简单了很多呢！</p>
 <hr>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>　　怎么样，感觉还不错吧。现在咱们可以直接通过　<a href="http://zhangsan.github.io" target="_blank" rel="external">http://zhangsan.github.io</a>　搞起个人博客了。但是还木有绑定个人域名哦，想绑定个人域名的，那就请移步这里吧：</p>
-<p>　　<font size="3"><a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</a></font></p>
+<p>　　<font size="3"><a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/">http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</a></font></p>
 <p>​    </p>
 
         
+        
+            
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/assets/img/alipay.jpg" title="扫码支持" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <p class="pay_sel_text"><span class="radiobox"></span>支付宝</p>
+                </div>
+              
+              
+                <div class="pay_item" data-id="weixinpay">
+                  <p class="pay_sel_text"><span class="radiobox"></span>微信</p>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/assets/img/"+dataid+".jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
+      
+            
         </div>
         <footer class="article-footer">
+
             <div class="share-container">
 
 

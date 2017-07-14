@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dongchunlin.com/"/>
-  <updated>2017-07-05T06:29:06.412Z</updated>
+  <updated>2017-07-13T13:19:04.000Z</updated>
   <id>http://www.dongchunlin.com/</id>
   
   <author>
@@ -20,16 +20,12 @@
     <link href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/"/>
     <id>http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</id>
     <published>2017-06-22T06:52:07.000Z</published>
-    <updated>2017-07-05T06:29:06.412Z</updated>
+    <updated>2017-07-13T13:19:04.000Z</updated>
     
-    <content type="html"><![CDATA[<font size="6">手把手教你从零开始搭建个人博客(三)</font>
-
-<hr>
-<font size="4">本文是Hexo+GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址</font>
-
+    <content type="html"><![CDATA[<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    本文是Hexo+GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址</p>
 <a id="more"></a>
-<font size="3" color="red">本文基于已经将个人博客部署在GitHub基础之上，如果还没有搭建的请先移步这里：<br>　　<a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a> </font>
-
+<p>​    本文基于已经将个人博客部署在GitHub基础之上，如果还没有搭建的请先移步这里：<br>　　<a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/">http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a> </p>
 <hr>
 <h2 id="添加域名解析"><a href="#添加域名解析" class="headerlink" title="添加域名解析"></a>添加域名解析</h2><blockquote>
 <p>想要绑定个性域名，首先得有一个域名喽，这里我就不介绍怎么申请域名了，还没有域名的自行去申请就行了。本文例子是在阿里云申请的域名。</p>
@@ -71,16 +67,12 @@
     <link href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/"/>
     <id>http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</id>
     <published>2017-06-22T06:51:58.000Z</published>
-    <updated>2017-07-05T06:29:00.999Z</updated>
+    <updated>2017-07-13T13:12:28.000Z</updated>
     
-    <content type="html"><![CDATA[<font size="6">手把手教你从零开始搭建个人博客(二)</font>
-
-<hr>
-<font size="4">本文是Hexo+GitHub搭建个人域名博客的第二篇，将带你将本地博客部署到GitHub</font>
-
+    <content type="html"><![CDATA[<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    本文是Hexo+GitHub搭建个人域名博客的第二篇，将带你将本地博客部署到GitHub</p>
 <a id="more"></a>
-<font size="3" color="red">本文基于已经在本地搭建好Hexo的基础之上，如果还没有搭建的请先移步这里：<br>　　<a href="http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/" target="_blank" rel="external">http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</a> </font>
-
+<p>​    本文基于已经在本地搭建好Hexo的基础之上，如果还没有搭建的请先移步这里：<br>　　<a href="http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/">http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</a> </p>
 <hr>
 <h2 id="新建GitHub仓库"><a href="#新建GitHub仓库" class="headerlink" title="新建GitHub仓库"></a>新建GitHub仓库</h2><blockquote>
 <p>首先得有个GitHub账号，这里就不介绍怎么申请账号了哈，没有的小伙伴自己先申请一个。</p>
@@ -138,7 +130,7 @@
 <p>　　好了，现在可以通过　<a href="http://zhangsan.github.io" target="_blank" rel="external">http://zhangsan.github.io</a>　访问了。以后新建文章、更新文章，只需要（1）（2）两步就行啦。是不是简单了很多呢！</p>
 <hr>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>　　怎么样，感觉还不错吧。现在咱们可以直接通过　<a href="http://zhangsan.github.io" target="_blank" rel="external">http://zhangsan.github.io</a>　搞起个人博客了。但是还木有绑定个人域名哦，想绑定个人域名的，那就请移步这里吧：</p>
-<p>　　<font size="3"><a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</a></font></p>
+<p>　　<font size="3"><a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/">http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</a></font></p>
 <p>​    </p>
 ]]></content>
     
@@ -162,13 +154,9 @@
     <link href="http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/"/>
     <id>http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</id>
     <published>2017-06-21T08:14:37.000Z</published>
-    <updated>2017-07-05T06:28:44.044Z</updated>
+    <updated>2017-07-13T13:12:08.000Z</updated>
     
-    <content type="html"><![CDATA[<font size="6">手把手教你从零开始搭建个人博客(一)</font>
-
-<hr>
-<font size="4">本文是Hexo+GitHub搭建个人域名博客的第一篇，初始化在本地搭建Hexo、简单学习Hexo常用命令、本地写第一篇文章并预览、配置主题。</font>
-
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    本文是Hexo+GitHub搭建个人域名博客的第一篇，初始化在本地搭建Hexo、简单学习Hexo常用命令、本地写第一篇文章并预览、配置主题。</p>
 <a id="more"></a>
 <h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><ul>
 <li><p>下载Git： <a href="https://git-scm.com/downloads" target="_blank" rel="external">https://git-scm.com/downloads</a></p>
@@ -263,7 +251,7 @@
 <p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo s</div><div class="line">​</div></pre></td></tr></table></figure></p>
 <p>　　好了，就是这么简单，现在重新打开 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 试试吧！</p>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>　　终于搞完了，有没有很欣慰啊，哈哈。别忘了，咱们的最终目的是要放到远端访问哦。歇一会，咱们继续搞起。下一篇将带你将本地博客部署到远端GitHub，请移步这里：</p>
-<p>　　<font size="3"><a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></font></p>
+<p>　　<font size="3"><a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/">http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></font></p>
 ]]></content>
     
     <summary type="html">
@@ -286,21 +274,19 @@
     <link href="http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog/"/>
     <id>http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog/</id>
     <published>2017-06-21T07:14:37.000Z</published>
-    <updated>2017-07-05T06:26:25.189Z</updated>
+    <updated>2017-07-13T13:11:04.000Z</updated>
     
-    <content type="html"><![CDATA[<font size="6">手把手教你从零开始搭建个人博客</font>
-
-<hr>
+    <content type="html"><![CDATA[<hr>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　这几天刚搭建了个人博客，打算把在其他平台的文章归置到一起，自己做个备份。本文作为一个记录，也给大家一份参考，避免不必要的踩坑。</p>
 <p>　　本文用Windows机器进行实际操作，其他系统差别不大，后续会加一篇文章介绍mac系统下的搭建过程。 </p>
 <a id="more"></a>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>　　由于篇幅关系，以及个人需求，本次搭建过程将分为三篇文章。 </p>
 <h3 id="第一篇实现安装Hexo，在本地发布预览文章"><a href="#第一篇实现安装Hexo，在本地发布预览文章" class="headerlink" title="第一篇实现安装Hexo，在本地发布预览文章"></a>第一篇实现安装Hexo，在本地发布预览文章</h3><p>　　点击这里： </p>
-<p>　　<a href="http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/" target="_blank" rel="external">http://dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</a></p>
+<p>　　<a href="http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/">http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</a></p>
 <h3 id="第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问"><a href="#第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问" class="headerlink" title="第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问"></a>第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问</h3><p>　　点击这里： </p>
-<p>　　<a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></p>
+<p>　　<a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/">http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></p>
 <h3 id="第三篇教你绑定域名，实现个人域名的访问"><a href="#第三篇教你绑定域名，实现个人域名的访问" class="headerlink" title="第三篇教你绑定域名，实现个人域名的访问"></a>第三篇教你绑定域名，实现个人域名的访问</h3><p>　　点击这里： </p>
-<p>　　<a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</a></p>
+<p>　　<a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/">http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</a></p>
 ]]></content>
     
     <summary type="html">

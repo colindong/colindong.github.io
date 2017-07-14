@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Colin的博客">
 <meta property="og:description" content="手把手教你从零搭建个人博客">
 <meta property="og:image" content="http://p.chanyouji.cn/66670/1378624311987p183u6ivcaoemls51gvtr8e3bi5.jpg">
-<meta property="og:updated_time" content="2017-07-05T06:29:06.412Z">
+<meta property="og:updated_time" content="2017-07-13T13:19:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+GitHub搭建个人域名博客（三）">
 <meta name="twitter:description" content="手把手教你从零搭建个人博客">
@@ -284,14 +284,10 @@ var _hmt = _hmt || [];
         <div class="article-entry" itemprop="articleBody">
         
             
-            <font size="6">手把手教你从零开始搭建个人博客(三)</font>
-
-<hr>
-<font size="4">本文是Hexo+GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址</font>
-
+            <hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    本文是Hexo+GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址</p>
 <a id="more"></a>
-<font size="3" color="red">本文基于已经将个人博客部署在GitHub基础之上，如果还没有搭建的请先移步这里：<br>　　<a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a> </font>
-
+<p>​    本文基于已经将个人博客部署在GitHub基础之上，如果还没有搭建的请先移步这里：<br>　　<a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/">http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a> </p>
 <hr>
 <h2 id="添加域名解析"><a href="#添加域名解析" class="headerlink" title="添加域名解析"></a>添加域名解析</h2><blockquote>
 <p>想要绑定个性域名，首先得有一个域名喽，这里我就不介绍怎么申请域名了，还没有域名的自行去申请就行了。本文例子是在阿里云申请的域名。</p>
@@ -313,8 +309,56 @@ var _hmt = _hmt || [];
 <h2 id="我的博客事例"><a href="#我的博客事例" class="headerlink" title="我的博客事例"></a>我的博客事例</h2><p>　　<font size="4"><a href="http://www.dongchunlin.com">http://www.dongchunlin.com</a></font></p>
 
         
+        
+            
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/assets/img/alipay.jpg" title="扫码支持" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <p class="pay_sel_text"><span class="radiobox"></span>支付宝</p>
+                </div>
+              
+              
+                <div class="pay_item" data-id="weixinpay">
+                  <p class="pay_sel_text"><span class="radiobox"></span>微信</p>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/assets/img/"+dataid+".jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
+      
+            
         </div>
         <footer class="article-footer">
+
             <div class="share-container">
 
 
