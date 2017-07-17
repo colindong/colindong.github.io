@@ -1550,7 +1550,7 @@ ol.toc {
 .post-copyright {
   margin-top: 30px;
   margin-bottom: 50px;
-  font-size: 14px;
+  font-size: 15px;
 }
 .post-copyright .content {
   margin-bottom: 1em;
@@ -1569,7 +1569,7 @@ ol.toc {
   overflow: hidden;
   padding: 0 16px 0 42px;
   height: 28px;
-  line-height: 28px;
+  line-height: 18px;
   color: #727272;
   background: #f1f3fa;
   border-radius: 14px;
