@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dongchunlin.com/"/>
-  <updated>2017-07-13T13:19:04.000Z</updated>
+  <updated>2017-07-15T19:15:00.000Z</updated>
   <id>http://www.dongchunlin.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/"/>
     <id>http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</id>
     <published>2017-06-22T06:52:07.000Z</published>
-    <updated>2017-07-13T13:19:04.000Z</updated>
+    <updated>2017-07-15T19:15:00.000Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    本文是Hexo+GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址</p>
@@ -67,7 +67,7 @@
     <link href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/"/>
     <id>http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</id>
     <published>2017-06-22T06:51:58.000Z</published>
-    <updated>2017-07-13T13:12:28.000Z</updated>
+    <updated>2017-07-15T19:16:00.000Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    本文是Hexo+GitHub搭建个人域名博客的第二篇，将带你将本地博客部署到GitHub</p>
@@ -154,7 +154,7 @@
     <link href="http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/"/>
     <id>http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</id>
     <published>2017-06-21T08:14:37.000Z</published>
-    <updated>2017-07-13T13:12:08.000Z</updated>
+    <updated>2017-07-15T19:37:52.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    本文是Hexo+GitHub搭建个人域名博客的第一篇，初始化在本地搭建Hexo、简单学习Hexo常用命令、本地写第一篇文章并预览、配置主题。</p>
 <a id="more"></a>
@@ -188,10 +188,10 @@
 <pre><code>（1）进入刚才新建的：“blog”文件夹， 右键》选择“Git Bash Here”
 
 （2）或者先打开Git Bash，执行命令  `cd E:/blog`
-</code></pre><h3 id="执行命令初始化"><a href="#执行命令初始化" class="headerlink" title="执行命令初始化"></a>执行命令初始化</h3><p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">​</div></pre></td></tr></table></figure></p>
+</code></pre><h3 id="执行命令初始化"><a href="#执行命令初始化" class="headerlink" title="执行命令初始化"></a>执行命令初始化</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
 <p>　　这里别着急，喝口水等一下~~出现如下信息说明初始化成功！</p>
 <p>　　INFO  Start blogging with Hexo!</p>
-<h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
 <p>　　安装成功出现：</p>
 <p>　　<img src="http://i.imgur.com/zFwagS8.png" alt=""></p>
 <p>　　下面看一下目录结构：</p>
@@ -217,7 +217,7 @@
 <p>　　hexo s -g ##》生成预览</p>
 <p>　　很简单的几个命令，用几次就记住了，下面激动人心的时刻到了，咱们写篇文章试试~~</p>
 <h2 id="写文章预览"><a href="#写文章预览" class="headerlink" title="写文章预览"></a>写文章预览</h2><h3 id="写新文章"><a href="#写新文章" class="headerlink" title="写新文章"></a>写新文章</h3><p>　　还是在刚才的blog根目录下，写篇名字“FirstArticle”的文章：</p>
-<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo new <span class="string">"FirstArticle"</span></div><div class="line">​</div></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> <span class="string">"FirstArticle"</span></div></pre></td></tr></table></figure>
 <p>　　出现以下信息：</p>
 <p>　　<img src="http://i.imgur.com/PC8Cpcy.png" alt=""></p>
 <p>　　我们的文章在该目录下：E:\blog\source_posts\FirstArticle<br>　　<br>　　我们找到这个文件之后用Markdown编辑器或其他文本编辑器打开，我们会看到里面已经有内容了：</p>
@@ -226,29 +226,29 @@
 <p>　　我们的文章内容要写在—下面，随便写点什么来看看效果吧：</p>
 <p>　　<img src="http://i.imgur.com/SPyv0Y0.png" alt=""></p>
 <h3 id="生成页面"><a href="#生成页面" class="headerlink" title="生成页面"></a>生成页面</h3><p>　　执行命令，生成静态页面（.md到.html）：</p>
-<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
 <p>　　出现一堆信息：</p>
 <p>　　<img src="http://i.imgur.com/lSnthe5.png" alt=""></p>
 <p>　　好了，是不是很简单，我们的博客页面已经生成了，下面搞起预览！</p>
-<h3 id="页面预览"><a href="#页面预览" class="headerlink" title="页面预览"></a>页面预览</h3><p>　　执行命令：<br>​<br>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo server</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<h3 id="页面预览"><a href="#页面预览" class="headerlink" title="页面预览"></a>页面预览</h3><p>　　执行命令：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
 <p>　　看到如下信息（我用的简写哦）：</p>
 <p>　　<img src="http://i.imgur.com/IWT1dZw.png" alt=""></p>
 <p>　　好了，哈哈，终于搞完了，现在打开浏览器访问<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>试试吧！    </p>
-<h3 id="下篇文章将介绍怎么部署到GitHub，快去试试吧！"><a href="#下篇文章将介绍怎么部署到GitHub，快去试试吧！" class="headerlink" title="　下篇文章将介绍怎么部署到GitHub，快去试试吧！"></a>　<font color="red">下篇文章将介绍怎么部署到GitHub，快去试试吧！</font></h3><p>　　点击这里： <a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></p>
 <h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><p>　　在这个看脸的时代，没有一个好的门面怎么行呢，哈哈。下面带你找好的主题并更换。</p>
 <p>　　咱们暂且找找GitHub上排名靠前的主题，如图：</p>
 <p>　　<img src="http://i.imgur.com/Q9TzcEE.png" alt=""></p>
 <p>　　好了，就先看看第一个吧，点击进入，复制链接，如图：</p>
 <p>　　<img src="http://i.imgur.com/HmFvFiD.png" alt=""></p>
 <p>　　回到本地blog文件夹，在根目录下有个themes文件夹，对了，这里就是存放主题的地方。现在只有一个默认的主题 landscape。我们下载刚才找到的主题：</p>
-<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https:<span class="comment">//github.com/litten/hexo-theme-yilia.git</span></div></pre></td></tr></table></figure>
 <p>　　等待下载完了，咱们再看看themes文件下是不是多了个yilia文件夹，这就是刚下载完的主题。</p>
 <p>　　下载完更换就很简单了，需要配置一下blog文件夹下的_config.yml文件。</p>
 <p>　　打开该文件，找到theme，将默认的改成yilia即可。如图：</p>
 <pre><code>![](http://i.imgur.com/OrA8fud.png)
 </code></pre><p>　　重新部署下：</p>
-<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo s</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure>
 <p>　　好了，就是这么简单，现在重新打开 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 试试吧！</p>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>　　终于搞完了，有没有很欣慰啊，哈哈。别忘了，咱们的最终目的是要放到远端访问哦。歇一会，咱们继续搞起。下一篇将带你将本地博客部署到远端GitHub，请移步这里：</p>
 <p>　　<font size="3"><a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/">http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></font></p>
@@ -274,18 +274,21 @@
     <link href="http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog/"/>
     <id>http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog/</id>
     <published>2017-06-21T07:14:37.000Z</published>
-    <updated>2017-07-13T13:11:04.000Z</updated>
+    <updated>2017-07-15T19:39:44.000Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　这几天刚搭建了个人博客，打算把在其他平台的文章归置到一起，自己做个备份。本文作为一个记录，也给大家一份参考，避免不必要的踩坑。</p>
 <p>　　本文用Windows机器进行实际操作，其他系统差别不大，后续会加一篇文章介绍mac系统下的搭建过程。 </p>
 <a id="more"></a>
 <h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>　　由于篇幅关系，以及个人需求，本次搭建过程将分为三篇文章。 </p>
-<h3 id="第一篇实现安装Hexo，在本地发布预览文章"><a href="#第一篇实现安装Hexo，在本地发布预览文章" class="headerlink" title="第一篇实现安装Hexo，在本地发布预览文章"></a>第一篇实现安装Hexo，在本地发布预览文章</h3><p>　　点击这里： </p>
+<h3 id="第一篇"><a href="#第一篇" class="headerlink" title="第一篇"></a>第一篇</h3><p>​    实现安装Hexo，在本地发布预览文章</p>
+<p>　　点击这里： </p>
 <p>　　<a href="http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/">http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/</a></p>
-<h3 id="第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问"><a href="#第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问" class="headerlink" title="第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问"></a>第二篇介绍简单配置、主题设置、部署到GitHub，实现远端访问</h3><p>　　点击这里： </p>
+<h3 id="第二篇"><a href="#第二篇" class="headerlink" title="第二篇"></a>第二篇</h3><p>​    介绍简单配置、主题设置、部署到GitHub，实现远端访问</p>
+<p>　　点击这里： </p>
 <p>　　<a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/">http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></p>
-<h3 id="第三篇教你绑定域名，实现个人域名的访问"><a href="#第三篇教你绑定域名，实现个人域名的访问" class="headerlink" title="第三篇教你绑定域名，实现个人域名的访问"></a>第三篇教你绑定域名，实现个人域名的访问</h3><p>　　点击这里： </p>
+<h3 id="第三篇"><a href="#第三篇" class="headerlink" title="第三篇"></a>第三篇</h3><p>​    教你绑定域名，实现个人域名的访问</p>
+<p>　　点击这里： </p>
 <p>　　<a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/">http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</a></p>
 ]]></content>
     

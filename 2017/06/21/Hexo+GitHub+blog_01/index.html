@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="Colin的博客">
 <meta property="og:description" content="手把手教你从零搭建个人博客">
 <meta property="og:image" content="http://bbs.meizhou.cn/data/attachment/forum/201511/18/200049uw4s4t6aetgy3mme.jpg">
-<meta property="og:updated_time" content="2017-07-13T13:12:08.000Z">
+<meta property="og:updated_time" content="2017-07-15T19:37:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+GitHub搭建个人域名博客(一)">
 <meta name="twitter:description" content="手把手教你从零搭建个人博客">
@@ -21,7 +21,7 @@
     
 
     
-        <link rel="alternate" href="/" title="Colin的博客" type="application/atom+xml" />
+        <link rel="alternate" href="[object Object]" title="Colin的博客" type="application/atom+xml" />
     
 
     
@@ -197,31 +197,31 @@ var _hmt = _hmt || [];
                     
                     
                     <td>
-                        <a href="https://github.com/lingruimingfeng" target="_blank" title="github" class=tooltip>
+                        <a href="https://github.com/lingruimingfeng" target="_blank" title="我的GitHub" class=tooltip>
                             <i class="fa fa-github"></i>
                         </a>
                     </td>
                     
                     <td>
-                        <a href="/" target="_blank" title="twitter" class=tooltip>
+                        <a href="http://weibo.com/lingruimingfeng" target="_blank" title="我的微博" class=tooltip>
+                            <i class="fa fa-weibo"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="mailto:chunlin_dcl@163.com" target="_blank" title="我的邮箱" class=tooltip>
+                            <i class="fa fa-at"></i>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a href="htttps://twitter.com/lingruimingfeng" target="_blank" title="我的twitter" class=tooltip>
                             <i class="fa fa-twitter"></i>
                         </a>
                     </td>
                     
                     <td>
-                        <a href="/" target="_blank" title="facebook" class=tooltip>
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </td>
-                    
-                    <td>
-                        <a href="/" target="_blank" title="dribbble" class=tooltip>
-                            <i class="fa fa-dribbble"></i>
-                        </a>
-                    </td>
-                    
-                    <td>
-                        <a href="/" target="_blank" title="rss" class=tooltip>
+                        <a href="/atom.xml" target="_blank" title="rss" class=tooltip>
                             <i class="fa fa-rss"></i>
                         </a>
                     </td>
@@ -284,6 +284,11 @@ var _hmt = _hmt || [];
         <div class="article-entry" itemprop="articleBody">
         
             
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">文章目录</strong>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git"><span class="toc-number">2.</span> <span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Node-js"><span class="toc-number">3.</span> <span class="toc-text">安装Node.js</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Hexo"><span class="toc-number">4.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo的使用"><span class="toc-number">5.</span> <span class="toc-text">Hexo的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建目录"><span class="toc-number">5.1.</span> <span class="toc-text">创建目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#执行命令初始化"><span class="toc-number">5.2.</span> <span class="toc-text">执行命令初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装依赖包"><span class="toc-number">5.3.</span> <span class="toc-text">安装依赖包</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo常见命令"><span class="toc-number">6.</span> <span class="toc-text">Hexo常见命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#常见命令"><span class="toc-number">6.1.</span> <span class="toc-text">常见命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用简写"><span class="toc-number">6.2.</span> <span class="toc-text">常用简写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常用组合"><span class="toc-number">6.3.</span> <span class="toc-text">常用组合</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写文章预览"><span class="toc-number">7.</span> <span class="toc-text">写文章预览</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#写新文章"><span class="toc-number">7.1.</span> <span class="toc-text">写新文章</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#生成页面"><span class="toc-number">7.2.</span> <span class="toc-text">生成页面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#页面预览"><span class="toc-number">7.3.</span> <span class="toc-text">页面预览</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置主题"><span class="toc-number">8.</span> <span class="toc-text">配置主题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#后记"><span class="toc-number">9.</span> <span class="toc-text">后记</span></a></li></ol>
+                </div>
+            
             <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    本文是Hexo+GitHub搭建个人域名博客的第一篇，初始化在本地搭建Hexo、简单学习Hexo常用命令、本地写第一篇文章并预览、配置主题。</p>
 <a id="more"></a>
 <h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><ul>
@@ -316,10 +321,10 @@ var _hmt = _hmt || [];
 <pre><code>（1）进入刚才新建的：“blog”文件夹， 右键》选择“Git Bash Here”
 
 （2）或者先打开Git Bash，执行命令  `cd E:/blog`
-</code></pre><h3 id="执行命令初始化"><a href="#执行命令初始化" class="headerlink" title="执行命令初始化"></a>执行命令初始化</h3><p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo init</div><div class="line">​</div></pre></td></tr></table></figure></p>
+</code></pre><h3 id="执行命令初始化"><a href="#执行命令初始化" class="headerlink" title="执行命令初始化"></a>执行命令初始化</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure>
 <p>　　这里别着急，喝口水等一下~~出现如下信息说明初始化成功！</p>
 <p>　　INFO  Start blogging with Hexo!</p>
-<h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install</div></pre></td></tr></table></figure>
 <p>　　安装成功出现：</p>
 <p>　　<img src="http://i.imgur.com/zFwagS8.png" alt=""></p>
 <p>　　下面看一下目录结构：</p>
@@ -345,7 +350,7 @@ var _hmt = _hmt || [];
 <p>　　hexo s -g ##》生成预览</p>
 <p>　　很简单的几个命令，用几次就记住了，下面激动人心的时刻到了，咱们写篇文章试试~~</p>
 <h2 id="写文章预览"><a href="#写文章预览" class="headerlink" title="写文章预览"></a>写文章预览</h2><h3 id="写新文章"><a href="#写新文章" class="headerlink" title="写新文章"></a>写新文章</h3><p>　　还是在刚才的blog根目录下，写篇名字“FirstArticle”的文章：</p>
-<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo new <span class="string">"FirstArticle"</span></div><div class="line">​</div></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo <span class="keyword">new</span> <span class="string">"FirstArticle"</span></div></pre></td></tr></table></figure>
 <p>　　出现以下信息：</p>
 <p>　　<img src="http://i.imgur.com/PC8Cpcy.png" alt=""></p>
 <p>　　我们的文章在该目录下：E:\blog\source_posts\FirstArticle<br>　　<br>　　我们找到这个文件之后用Markdown编辑器或其他文本编辑器打开，我们会看到里面已经有内容了：</p>
@@ -354,36 +359,61 @@ var _hmt = _hmt || [];
 <p>　　我们的文章内容要写在—下面，随便写点什么来看看效果吧：</p>
 <p>　　<img src="http://i.imgur.com/SPyv0Y0.png" alt=""></p>
 <h3 id="生成页面"><a href="#生成页面" class="headerlink" title="生成页面"></a>生成页面</h3><p>　　执行命令，生成静态页面（.md到.html）：</p>
-<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo generate</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo generate</div></pre></td></tr></table></figure>
 <p>　　出现一堆信息：</p>
 <p>　　<img src="http://i.imgur.com/lSnthe5.png" alt=""></p>
 <p>　　好了，是不是很简单，我们的博客页面已经生成了，下面搞起预览！</p>
-<h3 id="页面预览"><a href="#页面预览" class="headerlink" title="页面预览"></a>页面预览</h3><p>　　执行命令：<br>​<br>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo server</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<h3 id="页面预览"><a href="#页面预览" class="headerlink" title="页面预览"></a>页面预览</h3><p>　　执行命令：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure>
 <p>　　看到如下信息（我用的简写哦）：</p>
 <p>　　<img src="http://i.imgur.com/IWT1dZw.png" alt=""></p>
 <p>　　好了，哈哈，终于搞完了，现在打开浏览器访问<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a>试试吧！    </p>
-<h3 id="下篇文章将介绍怎么部署到GitHub，快去试试吧！"><a href="#下篇文章将介绍怎么部署到GitHub，快去试试吧！" class="headerlink" title="　下篇文章将介绍怎么部署到GitHub，快去试试吧！"></a>　<font color="red">下篇文章将介绍怎么部署到GitHub，快去试试吧！</font></h3><p>　　点击这里： <a href="http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/" target="_blank" rel="external">http://dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></p>
 <h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><p>　　在这个看脸的时代，没有一个好的门面怎么行呢，哈哈。下面带你找好的主题并更换。</p>
 <p>　　咱们暂且找找GitHub上排名靠前的主题，如图：</p>
 <p>　　<img src="http://i.imgur.com/Q9TzcEE.png" alt=""></p>
 <p>　　好了，就先看看第一个吧，点击进入，复制链接，如图：</p>
 <p>　　<img src="http://i.imgur.com/HmFvFiD.png" alt=""></p>
 <p>　　回到本地blog文件夹，在根目录下有个themes文件夹，对了，这里就是存放主题的地方。现在只有一个默认的主题 landscape。我们下载刚才找到的主题：</p>
-<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone https:<span class="comment">//github.com/litten/hexo-theme-yilia.git</span></div></pre></td></tr></table></figure>
 <p>　　等待下载完了，咱们再看看themes文件下是不是多了个yilia文件夹，这就是刚下载完的主题。</p>
 <p>　　下载完更换就很简单了，需要配置一下blog文件夹下的_config.yml文件。</p>
 <p>　　打开该文件，找到theme，将默认的改成yilia即可。如图：</p>
 <pre><code>![](http://i.imgur.com/OrA8fud.png)
 </code></pre><p>　　重新部署下：</p>
-<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo g</div><div class="line">​</div></pre></td></tr></table></figure></p>
-<p>　　<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">hexo s</div><div class="line">​</div></pre></td></tr></table></figure></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s</div></pre></td></tr></table></figure>
 <p>　　好了，就是这么简单，现在重新打开 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 试试吧！</p>
 <h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>　　终于搞完了，有没有很欣慰啊，哈哈。别忘了，咱们的最终目的是要放到远端访问哦。歇一会，咱们继续搞起。下一篇将带你将本地博客部署到远端GitHub，请移步这里：</p>
 <p>　　<font size="3"><a href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/">http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</a></font></p>
 
         
-        
             
+    <div class="post-copyright">
+        <div class="content">
+            
+<span class="post-time">
+    最后更新时间：<time datetime="2017-07-15T19:37:52.000Z" itemprop="dateUpdated">2017-07-16 03:37:52</time>
+</span><br>
+
+
+            
+            转载请注明出处：
+            <a href="/2017/06/21/Hexo+GitHub+blog_01/" target="_blank" rel="external">
+                http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/
+            </a>
+            
+        </div>
+        <footer>
+            <a href="http://www.dongchunlin.com">
+                <img src="/assets/img/江流儿.jpg" alt="DongChunlin">
+                DongChunlin
+            </a>
+        </footer>
+    </div>
+
+
+            
+                
         <div class="page-reward">
           <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
           <div class="hide_box"></div>
@@ -430,9 +460,8 @@ var _hmt = _hmt || [];
       
             
         </div>
-        <footer class="article-footer">
-
-            <div class="share-container">
+            <footer class="article-footer">
+                <div class="share-container">
 
 
     <div class="bdsharebuttonbox">
@@ -473,12 +502,12 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
 
 </div>
 
-            
+                
     
         <a href="http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog_01/#comments" class="article-comment-link">评论</a>
     
 
-        </footer>
+            </footer>
     </div>
     
         
@@ -514,6 +543,8 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
     
 
 </section>
+
+            
             
                 
 <aside id="sidebar">
@@ -607,36 +638,9 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
     
         
     <div class="widget-wrap">
-        <h3 class="widget-title">分类</h3>
-        <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo教程/">Hexo教程</a><span class="category-list-count">4</span></li></ul>
-        </div>
-    </div>
-
-    
-        
-    <div class="widget-wrap">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
             <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">4</span></li></ul>
-        </div>
-    </div>
-
-    
-        
-    <div class="widget-wrap">
-        <h3 class="widget-title">标签</h3>
-        <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo搭建/">Hexo搭建</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/环境搭建/">环境搭建</a><span class="tag-list-count">4</span></li></ul>
-        </div>
-    </div>
-
-    
-        
-    <div class="widget-wrap">
-        <h3 class="widget-title">标签云</h3>
-        <div class="widget tagcloud">
-            <a href="/tags/Hexo搭建/" style="font-size: 10px;">Hexo搭建</a> <a href="/tags/环境搭建/" style="font-size: 10px;">环境搭建</a>
         </div>
     </div>
 
@@ -648,11 +652,11 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
             <ul>
                 
                     <li>
-                        <a href="http://hexo.io">Hexo</a>
+                        <a href="http://hexo.io" target="_blank">Hexo</a>
                     </li>
                 
                     <li>
-                        <a href="http://www.jkinn.com/">Java大神-王怀亮的博客</a>
+                        <a href="http://www.jkinn.com/" target="_blank">Java大神-王怀亮的博客</a>
                     </li>
                 
             </ul>
@@ -661,10 +665,20 @@ window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMin
 
 
     
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/Hexo搭建/" style="font-size: 10px;">Hexo搭建</a> <a href="/tags/环境搭建/" style="font-size: 10px;">环境搭建</a>
+        </div>
+    </div>
+
+    
     <div id="toTop" class="fa fa-angle-up"></div>
 </aside>
 
             
+
         </div>
         <footer id="footer">
     <div class="outer">

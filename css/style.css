@@ -138,7 +138,7 @@ code {
   background-color: #f8f8f8;
 }
 .outer {
-  max-width: 1320px;
+  max-width: 1520px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -185,16 +185,16 @@ code {
   #main {
     display: inline;
     float: left;
-    width: 52.307692307692314%;
-    margin: 0 0.769230769230769%;
+    width: 58.666666666666664%;
+    margin: 0 0.666666666666667%;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
   #main {
     display: inline;
     float: left;
-    width: 67.6923076923077%;
-    margin: 0 0.769230769230769%;
+    width: 58.666666666666664%;
+    margin: 0 0.666666666666667%;
   }
 }
 @media screen and (min-width: 560px) and (max-width: 799px) {
@@ -642,8 +642,8 @@ code {
 #profile {
   display: inline;
   float: left;
-  width: 21.53846153846154%;
-  margin: 0 0.769230769230769%;
+  width: 18.666666666666668%;
+  margin: 0 0.666666666666667%;
   display: none;
 }
 @media screen and (min-width: 1200px) {
@@ -1044,6 +1044,33 @@ a.article-title:hover {
   color: #565a5f;
   padding: 0 20px;
   line-height: 1.6em;
+/*
+    blockquote
+        position: static
+        font-family: font-serif
+        font-size: 1.1em
+        margin: 0 -20px
+        padding: 10px 20px 10px 54px
+        background: #fcfcfc
+        border-left: 4px solid #eee
+        &:before
+            top: 20px
+            left: 10px
+            content: "\f10d"
+            color: #e2e2e2
+            font-size: 32px;
+            font-family: FontAwesome
+            text-align: center
+            position: static
+        footer
+            font-size: font-size
+            margin: line-height 0
+            font-family: font-sans
+            cite
+                &:before
+                    content: "—"
+                    padding: 0 0.5em
+    */
 }
 .article-entry:before,
 .article-entry:after {
@@ -1117,46 +1144,37 @@ a.article-title:hover {
 }
 .article-entry blockquote {
   position: static;
-  font-family: Georgia, "Times New Roman", "Microsoft Yahei", serif;
-  font-size: 1.1em;
-  margin: 0 -20px;
-  padding: 10px 20px 10px 54px;
-  background: #fcfcfc;
-  border-left: 4px solid #eee;
-}
-.article-entry blockquote:before {
-  top: 20px;
-  left: 10px;
-  content: "\f10d";
-  color: #e2e2e2;
-  font-size: 32px;
-  font-family: FontAwesome;
-  text-align: center;
-  position: static;
-}
-.article-entry blockquote footer {
-  font-size: 14px;
-  margin: 1.6em 0;
   font-family: "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin: 0 0 1.3em 0;
+  padding: 6px;
+  background: #fcfcfc;
+  border-left: 5px solid #ef9024;
+  border-top: 1px solid $grey-light;
+  border-bottom: 1px solid $grey-light;
+  border-right: 1px solid $grey-light;
 }
-.article-entry blockquote footer cite:before {
-  content: "—";
-  padding: 0 0.5em;
+.article-entry blockquote cite::before {
+  content: "-";
+  padding: 0 5px;
 }
-.article-entry .pullquote {
+.article-entry blockquote p {
+  margin: 5px;
+}
+.pullquote {
   text-align: left;
   width: 45%;
   margin: 0;
 }
-.article-entry .pullquote.left {
+.pullquote.left {
   margin-left: 0.5em;
   margin-right: 1em;
 }
-.article-entry .pullquote.right {
+.pullquote.right {
   margin-right: 0.5em;
   margin-left: 1em;
 }
-.article-entry .caption {
+.caption {
   color: #999;
   display: block;
   font-size: 0.9em;
@@ -1164,15 +1182,15 @@ a.article-title:hover {
   position: relative;
   text-align: center;
 }
-.article-entry .video-container {
+.video-container {
   position: relative;
   padding-top: 56.25%;
   height: 0;
   overflow: hidden;
 }
-.article-entry .video-container iframe,
-.article-entry .video-container object,
-.article-entry .video-container embed {
+.video-container iframe,
+.video-container object,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -1446,10 +1464,12 @@ a.article-title:hover {
   margin: 0 auto;
 }
 .toc-article {
-  background: #f9f9f9;
-  margin: 2em 0 0 0.2em;
+  background: #eee;
+  width: 120px;
+  margin: 2em 0 0 1em;
   padding: 1em;
-  border-radius: 0px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
 }
 .toc-article .toc-title {
   font-size: 120%;
@@ -1526,6 +1546,41 @@ ol.toc {
 }
 .lg-outer .lg-thumb-item {
   border-radius: 0 !important;
+}
+.post-copyright {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+.post-copyright .content {
+  margin-bottom: 1em;
+  padding: 15px;
+  word-break: break-all;
+  color: #727272;
+  background: #f1f3fa;
+  border-radius: 20px;
+}
+.post-copyright footer {
+  float: right;
+}
+.post-copyright footer a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 16px 0 42px;
+  height: 28px;
+  line-height: 28px;
+  color: #727272;
+  background: #f1f3fa;
+  border-radius: 14px;
+}
+.post-copyright footer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
 }
 #comments {
   padding: 20px;
@@ -1868,16 +1923,16 @@ ol.toc {
   #sidebar {
     display: inline;
     float: left;
-    width: 21.53846153846154%;
-    margin: 0 0.769230769230769%;
+    width: 18.666666666666668%;
+    margin: 0 0.666666666666667%;
   }
 }
 @media screen and (min-width: 800px) and (max-width: 1199px) {
   #sidebar {
     display: inline;
     float: left;
-    width: 29.230769230769234%;
-    margin: 0 0.769230769230769%;
+    width: 25.333333333333336%;
+    margin: 0 0.666666666666667%;
   }
 }
 .widget {
@@ -2269,7 +2324,7 @@ ol.toc {
   margin: 0px;
   display: block;
   overflow-x: auto;
-  padding: 15px 20px;
+  padding: 10px 15px;
   font-size: 14px;
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
   line-height: 22.400000000000002px;
