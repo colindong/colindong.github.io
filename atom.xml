@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Colin的博客</title>
+  <title>董春林的博客</title>
   <subtitle>慎独、沉淀、坚持、绽放</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -9,7 +9,7 @@
   <id>http://www.dongchunlin.com/</id>
   
   <author>
-    <name>DongChunlin</name>
+    <name>董春林</name>
     
   </author>
   
