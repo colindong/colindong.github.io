@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.dongchunlin.com/2017/07/19/KotlinStudy-config/</loc>
+    
+    <lastmod>2017-07-19T06:51:41.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</loc>
+    
+    <lastmod>2017-07-19T02:45:28.483Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.dongchunlin.com/2017/06/21/Hexo+GitHub+blog/</loc>
     
     <lastmod>2017-07-15T19:39:44.000Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</loc>
     
     <lastmod>2017-07-15T19:16:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</loc>
-    
-    <lastmod>2017-07-15T19:15:00.000Z</lastmod>
     
   </url>
   

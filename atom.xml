@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dongchunlin.com/"/>
-  <updated>2017-07-15T19:15:00.000Z</updated>
+  <updated>2017-07-19T06:51:41.600Z</updated>
   <id>http://www.dongchunlin.com/</id>
   
   <author>
@@ -16,11 +16,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Kotlin学习之配置准备</title>
+    <link href="http://www.dongchunlin.com/2017/07/19/KotlinStudy-config/"/>
+    <id>http://www.dongchunlin.com/2017/07/19/KotlinStudy-config/</id>
+    <published>2017-07-19T02:40:04.000Z</published>
+    <updated>2017-07-19T06:51:41.600Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>　　Kotlin 是一个基于 JVM 的新的编程语言，由 JetBrains 开发，起源来自JetBrains的圣彼得堡团队，名称取自圣彼得堡附近的一个小岛(Kotlin Island)。Kotlin可以编译成Java字节码，也可以编译成JavaScript，方便在没有JVM的设备上运行。JetBrains，作为目前广受欢迎的Java IDE IntelliJ 的提供商，在 Apache 许可下已经开源其Kotlin 编程语言。2017年5月18日的I/O大会上谷歌宣布Kotlin正式成为Android的官方语言。<br><a id="more"></a><br><img src="http://i.imgur.com/lPaKAmV.png" alt="Google I/O 2017"></p>
+<h2 id="安装-Kotlin-插件"><a href="#安装-Kotlin-插件" class="headerlink" title="安装 Kotlin 插件"></a>安装 Kotlin 插件</h2><p>　　Android Studio 从 3.0（preview）版本开始将内置安装 Kotlin 插件。如果你正在使用的是早期版本， 需要通过 File | Settings | Plugins | Install JetBrains plugin… 搜索并安装 Kotlin 插件。 在 Android Studio 欢迎界面中，可以通过 Configure | Plugins | Install JetBrains plugin… 。 安装完成后需要重新启动 Android Studio。<br>　　也可以直接下载 Android Studio3.0预览版  <a href="https://developer.android.com/studio/preview/index.html" title="Android Studio 预览版" target="_blank" rel="external">https://developer.android.com/studio/preview/index.html</a><br>　　可以在安装有稳定版的同时安装 Android Studio 预览版并在这两个版本中开发同一应用。如果在 Windows 上安装了 Android Studio 2.3 稳定版和 Android Studio 2.4 预览版，那么，每个版本的设置分别存储在类似下面这样的目录中：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">C:\Users\***\.AndroidStudio2.3\    </div><div class="line">C:\Users\***\.AndroidStudioPreview2.4\</div></pre></td></tr></table></figure></p>
+<p>在 Mac 上，这些目录位于 ~/Library/Preferences/ 和 ~/Library/Application Support/ 中。 在 Linux 上，这些目录位于主目录中。</p>
+<p>在下载 Android Studio 预览版之后，只需按照下述方法将此应用与其他任何版本的 Android Studio 一起保存即可。</p>
+<p><strong>Windows：</strong></p>
+<p>解压缩 ZIP 文件。<br>将生成的文件夹重命名为类似 “Android Studio Preview” 这样的唯一名称。<br>将此文件夹移动到某个永久性位置，例如 C:\Program Files\Android\ 中现有 Android Studio 安装的旁边。<br>在 C:\Program Files\Android\Android Studio Preview\bin\ 内，启动 studio64.exe（或者，如果运行的是 32 位计算机，则启动 studio.exe）。<br>为了能够在“开始”菜单中访问预览版，请右键点击 studio64.exe 并点击固定到开始菜单。   </p>
+<p><strong>Mac：</strong></p>
+<p>解压缩 ZIP 文件。<br>注： 如果下载的是版本 2.3 或更低版本，则应用名称不包含版本号，因此，在将新版本移动到应用目录中之前，必须先重命名该文件。否则，可能会覆盖现有版本的 Android Studio。</p>
+<p>将应用文件拖放到 Applications 文件夹中。<br>现在启动该应用。  </p>
+<p><strong>Linux：</strong></p>
+<p>解压缩 ZIP 文件。<br>将生成的文件夹重命名为类似“android-studio-preview”这样的唯一名称。<br>将该文件夹移动到安装有稳定版的位置，例如 /usr/local/ 中（对于用户个人资料）或者 /opt/ 中（对于共享用户）。<br>打开终端，导航至 android-studio-preview/bin/ 并执行 studio.sh。<br>要使预览版出现在应用列表中，请从 Android Studio 菜单栏中选择 Tools &gt; Create Desktop Entry。</p>
+<h2 id="创建新工程"><a href="#创建新工程" class="headerlink" title="创建新工程"></a>创建新工程</h2><p>首先，创建新的工程。选择 Start a new Android Studio project 或者 File | New project。 根据弹出的对话框提示进行操作。 为新工程命名，选择已安装的 Android SDK 版本。实际上大多数选项均有默认值 ，只需要按几次“回车”键即可。   </p>
+<p>命名工程:<br><img src="http://i.imgur.com/3tDVJLK.png" alt="命名工程"><br>Android Studio 3.0 在当前对话框中提供启用 Kotlin 支持的选项，勾选后可以跳过 “配置 Kotlin 工程（Configuring Kotlin in the project）”的步骤。</p>
+<p>选择 Android 版本:<br><img src="http://i.imgur.com/SpUiJ2m.png" alt="选择Android版本"></p>
+<p>选择需要创建的 Activity 样式:<br><img src="http://i.imgur.com/TPBuGil.png" alt="选择Activity样式"></p>
+<p>命名该 Activity:<br><img src="http://i.imgur.com/pp0gtSz.png" alt="命名Activity"><br>在 Android Studio 3.0 中，可以选择使用 Kotlin 创建 activity，因此也不需要“将Java 代码转换为 Kotlin（Converting Java code to Kotlin）”这一步骤。早期版本中则会先使用 Java 创建 activity，然后再使用自动转换工具进行转换。</p>
+<p>一般而言，着手使用 Kotlin 的最便捷方式，无疑是将 Java 代码自动转换为 Kotlin。 值得一提的是，与其为了使用新的方式表达旧的模式而去查阅文档， 不如直接使用 Java 编写代码，再复制粘贴到 Kotlin 文件中，IntelliJ IDEA（或Android Studio）会提示需要转换代码。</p>
+<h2 id="将-Java-代码转换为-Kotlin"><a href="#将-Java-代码转换为-Kotlin" class="headerlink" title="将 Java 代码转换为 Kotlin"></a>将 Java 代码转换为 Kotlin</h2><p>打开MainActivity.java文件，使用 Convert Java File to Kotlin File 命令。使用该命令的方式有如下几种， 强烈推荐 Find Action（快捷键control+shift+A），输入相应的命令名称（见下方截图）即可。 同样也可以通过菜单栏依次调出 Code | Convert Java File to Kotlin File 或使用快捷键（菜单栏入口可见）完成操作。<br><img src="http://i.imgur.com/w8fxwDK.png" alt=" Find Action窗口"><br><img src="http://i.imgur.com/REhwva9.png" alt="菜单栏调出"></p>
+<p>转换完成后即可看到使用 Kotlin 编写的 activity：<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">class MainActivity : AppCompatActivity() &#123;</div><div class="line"></div><div class="line">    override fun onCreate(savedInstanceState: Bundle?) &#123;</div><div class="line">        super.onCreate(savedInstanceState)</div><div class="line">        setContentView(R.layout.activity_main)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="工程中配置-Kotlin"><a href="#工程中配置-Kotlin" class="headerlink" title="工程中配置 Kotlin"></a>工程中配置 Kotlin</h2><p>在开始编辑此文件时，Android Studio 会提示当前工程还未配置 Kotlin，根据提示完成操作即可；或者可以在菜单栏中选择 Tools &gt;&gt;    Kotlin &gt;&gt; Configure Kotlin in Project。<br>选择配置时有如下对话框，选择已安装的最新版本即可。<br><img src="http://i.imgur.com/j4tSWqB.png" alt="配置对话框"></p>
+<p>Kotlin 配置完成后，应用程序的 build.gradle 文件会更新。 你能看到新增了 apply plugin: ‘kotlin-android’ 及其依赖。<br><img src="http://i.imgur.com/BtPLWu2.png" alt="build.gradle文件"></p>
+<p>同步工程，在提示框中点击“立即同步（Sync Now）”或者使用 Sync Project with Gradle Files命令。<br><img src="http://i.imgur.com/GH3iz1s.png" alt=""></p>
+<p>最后构建应用程序，在虚拟机或连接的设备上运行。 所有这些工作与 Java 并无区别。 你可以发布应用程序，并以类似于使用 Java 编写的 Android 应用程序的方式进行签名。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      开始学习Kotlin的准备
+    
+    </summary>
+    
+      <category term="Kotlin" scheme="http://www.dongchunlin.com/categories/Kotlin/"/>
+    
+    
+      <category term="Kotlin" scheme="http://www.dongchunlin.com/tags/Kotlin/"/>
+    
+      <category term="学习笔记" scheme="http://www.dongchunlin.com/tags/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo+GitHub搭建个人域名博客（三）</title>
     <link href="http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/"/>
     <id>http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_03/</id>
     <published>2017-06-22T06:52:07.000Z</published>
-    <updated>2017-07-15T19:15:00.000Z</updated>
+    <updated>2017-07-19T02:45:28.483Z</updated>
     
     <content type="html"><![CDATA[<hr>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>​    本文是Hexo+GitHub搭建个人域名博客的第三篇，带你将个人域名绑定到GitHub博客地址</p>
