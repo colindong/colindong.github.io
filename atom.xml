@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dongchunlin.com/"/>
-  <updated>2017-07-19T08:01:57.690Z</updated>
+  <updated>2017-07-24T09:28:25.488Z</updated>
   <id>http://www.dongchunlin.com/</id>
   
   <author>
@@ -14,6 +14,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android模拟器启动失败之emulator错误集锦</title>
+    <link href="http://www.dongchunlin.com/2017/07/24/emulator-error-fail/"/>
+    <id>http://www.dongchunlin.com/2017/07/24/emulator-error-fail/</id>
+    <published>2017-07-24T08:34:05.000Z</published>
+    <updated>2017-07-24T09:28:25.488Z</updated>
+    
+    <content type="html"><![CDATA[<hr>
+<h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><p>这几天在一台新电脑上面搭建Android环境，在启动模拟器的时候，打死启动不了啊，尼玛……这是咋了。<br>下面是问题：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ERROR:./android/qt/qt_setup.cpp:<span class="number">28</span>:Qt library not found at ..\emulator\lib64\qt\lib</div><div class="line">Could not launch <span class="string">'./qemu/windows-x86_64/qemu-system-i386.exe'</span>: No such file or directory</div></pre></td></tr></table></figure></p>
+<p>见名之意？那他的意思是找不到文件或者目录，扯淡啊，我的sdk目录下明明有这个文件。<br><a id="more"></a></p>
+<h2 id="资料查询"><a href="#资料查询" class="headerlink" title="资料查询"></a>资料查询</h2><p>于是乎，开始了一波的网络搜集（主要是Google search、stackoverflow）。<br>有这样说的：  </p>
+<ol>
+<li>没有安装emulator：<br>在Tools &gt; Android &gt; SDK Manager &gt; SDK Tools，勾选Android Emulator安装。<br><img src="http://i.imgur.com/3GWmJq6.png" alt="SDK Manager">  </li>
+<li>Emulator版本问题：<br>话说是Emulator更新到26.1.2版本以后,，，模拟器工具已经不在tools目录下了，而是改到了sdk根目录。所以，就得修改tools目录的配置。<br>要将该目录  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">C:\AndroidSDK\tools</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>改为：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">C:\AndroidSDK\emulator</div></pre></td></tr></table></figure></p>
+<p>上述只是一个例子，你的sdk可能是其他盘其他目录，总之就是要在你的环境变量path里面将 <em>%ANDROID_HOME%\tools;</em> 改为 %ANDROID_HOME%\emulator;  或者将之前的 tools排在 emulator之后。  </p>
+<ol>
+<li>Emulator目录下启动：<br>还有种说法，说是你要到emulator目录下通过命令（emulator -avd [name]）启动模拟器。我在第一时间是排除此说法的，这怎么可能，分明AndroidStudio就可以直接启动嘛！！不过，最后我也尝试了此类不靠谱说法。让我哭一会~~（后面讲的我遇到的奇葩问题你就理解了）。</li>
+</ol>
+<h2 id="我的问题"><a href="#我的问题" class="headerlink" title="我的问题"></a>我的问题</h2><p>文章一开始也讲到了，我是在一台新电脑上面搭建。唉（升调），我们怎么都没问题。听我慢慢讲~<br>我遇到上述问题，试了各种方法后，无奈，那就用Genymotion试试呗。好，开始安装~<br>尼玛啊，什么鬼！我折腾了半天，居然卡在了启动界面，无任何提示。重复卸载安装，上网查询此类问题，均是无果。<br>我觉得我都要崩溃了啊！<br>再换个模拟器试试，无意中看到了一个叫“夜神”的模拟器。下载安装，一套下来，我真要哭了。“您的显卡驱动版本太低”，这又是什么鬼！！<br>好吧，好在有提示了，那就升级显卡启动试试。<br>最终，最终的最终，终于搞定了啊。太尼玛不容易了，试了试Android自带模拟器好了、Genymotion也正常了。<br>真是想不到，这尼玛问题，居然是显卡驱动版本太低，我也是醉了。只能说，某些软件做的也不行啊，连个提示都没有，还不如一个小众软件（此处给夜神模拟器一个赞）。  </p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>遇到此问题时：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ERROR:./android/qt/qt_setup.cpp:<span class="number">28</span>:Qt library not found at ..\emulator\lib64\qt\lib</div><div class="line">Could not launch <span class="string">'./qemu/windows-x86_64/qemu-system-i386.exe'</span>: No such file or directory</div></pre></td></tr></table></figure></p>
+<p>试试以下方法：  </p>
+<ol>
+<li>没有安装emulator：<br>在Tools &gt; Android &gt; SDK Manager &gt; SDK Tools，勾选Android Emulator安装。<br><img src="http://i.imgur.com/3GWmJq6.png" alt="SDK Manager">  </li>
+<li>Emulator版本问题：<br>将该目录  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">C:\AndroidSDK\tools</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>改为：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">C:\AndroidSDK\emulator</div></pre></td></tr></table></figure></p>
+<p>在你的环境变量path里面将 <em>%ANDROID_HOME%\tools;</em> 改为 %ANDROID_HOME%\emulator;  或者将之前的 tools排在 emulator之后。  </p>
+<ol>
+<li>更新显卡驱动：<br>更新你的显卡驱动 </li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      Android模拟器启动失败之emulator错误集锦
+    
+    </summary>
+    
+      <category term="Android" scheme="http://www.dongchunlin.com/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://www.dongchunlin.com/tags/Android/"/>
+    
+      <category term="emulator" scheme="http://www.dongchunlin.com/tags/emulator/"/>
+    
+      <category term="问题" scheme="http://www.dongchunlin.com/tags/%E9%97%AE%E9%A2%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Kotlin学习之配置准备</title>
