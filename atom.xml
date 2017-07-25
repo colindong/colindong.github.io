@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.dongchunlin.com/"/>
-  <updated>2017-07-25T01:35:39.491Z</updated>
+  <updated>2017-07-25T06:51:09.615Z</updated>
   <id>http://www.dongchunlin.com/</id>
   
   <author>
@@ -14,6 +14,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="http://www.dongchunlin.com/2017/07/25/test/"/>
+    <id>http://www.dongchunlin.com/2017/07/25/test/</id>
+    <published>2017-07-25T06:51:09.000Z</published>
+    <updated>2017-07-25T06:51:09.615Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Android模拟器启动失败之emulator错误集锦</title>
