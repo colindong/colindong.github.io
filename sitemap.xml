@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.dongchunlin.com/about/index.html</loc>
+    
+    <lastmod>2017-07-25T09:11:07.015Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.dongchunlin.com/2017/07/24/emulator-error-fail/</loc>
     
     <lastmod>2017-07-25T01:35:39.491Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>http://www.dongchunlin.com/2017/06/22/Hexo+GitHub+blog_02/</loc>
     
     <lastmod>2017-07-15T19:16:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.dongchunlin.com/about/index.html</loc>
-    
-    <lastmod>2017-07-15T16:35:06.000Z</lastmod>
     
   </url>
   
